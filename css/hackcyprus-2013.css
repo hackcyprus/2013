@@ -1,0 +1,510 @@
+/* Reset.less
+ * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here   that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
+ * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  width: 60em;
+  margin: 0 auto;
+}
+body {
+  background: #2e3a3a;
+}
+@font-face {
+  font-family: 'deming';
+  src: url('/fonts/deming_ep-webfont.eot');
+  src: url('/fonts/deming_ep-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/deming_ep-webfont.woff') format('woff'), url('/fonts/deming_ep-webfont.ttf') format('truetype'), url('/fonts/deming_ep-webfont.svg#deming_epregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sullivan';
+  src: url('/fonts/sullivan-regular-webfont.eot');
+  src: url('/fonts/sullivan-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/sullivan-regular-webfont.woff') format('woff'), url('/fonts/sullivan-regular-webfont.ttf') format('truetype'), url('/fonts/sullivan-regular-webfont.svg#sullivanregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.sans {
+  font-family: "adelle-sans", sans-serif;
+}
+.serif {
+  font-family: "adelle", serif;
+}
+body {
+  font-size: 16px;
+  font-family: "adelle", serif;
+  color: #2e3a3a;
+}
+h1 {
+  font-size: 3.25em;
+  font-weight: 300;
+  margin-bottom: 0.75em;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 2.5em;
+  color: #7c8a8b;
+}
+.btn {
+  display: block;
+  text-transform: uppercase;
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #2e3a3a;
+  padding: 1em 2em;
+  text-align: center;
+  position: relative;
+  letter-spacing: 1px;
+  background: #d1d8d8;
+  z-index: 2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.btn span {
+  z-index: 3;
+  position: relative;
+}
+.btn:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  top: -8px;
+  bottom: -8px;
+  border: 2px dotted #d1d8d8;
+  z-index: 1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.btn:hover:after {
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+}
+.btn.primary {
+  background: #fcb614;
+  color: #fef0d0;
+}
+.btn.primary:hover {
+  color: #2e3a3a;
+}
+.btn.secondary {
+  background: #1bb1ba;
+  color: #85f8ff;
+}
+.btn.mono {
+  background: #2e3a3a;
+  color: #d1d8d8;
+}
+.btn.inverse:after {
+  border-color: #2e3a3a;
+}
+.btn.inverse:hover {
+  color: #ffffff;
+}
+#site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background: #2e3a3a;
+  zoom: 1;
+  padding: 1em 0;
+}
+#site-nav:before,
+#site-nav:after {
+  content: "";
+  display: table;
+}
+#site-nav:after {
+  clear: both;
+}
+#site-nav ul {
+  zoom: 1;
+}
+#site-nav ul:before,
+#site-nav ul:after {
+  content: "";
+  display: table;
+}
+#site-nav ul:after {
+  clear: both;
+}
+#site-nav ul.left-nav {
+  float: left;
+}
+#site-nav ul.left-nav li {
+  margin-right: 1em;
+}
+#site-nav ul.right-nav {
+  float: right;
+}
+#site-nav ul.right-nav li {
+  margin-left: 1em;
+}
+#site-nav li {
+  float: left;
+}
+#site-nav a {
+  font-family: "adelle-sans", sans-serif;
+  text-decoration: none;
+  color: #d1d8d8;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  border: 1px solid #2e3a3a;
+  display: block;
+  padding: 1em 1.5em;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#site-nav a:hover {
+  border-color: #a6b2b1;
+  border-style: dotted;
+}
+#site-nav a.selected {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+#site-nav a.selected:hover {
+  border-style: solid;
+}
+a#logo {
+  text-transform: none;
+  position: absolute;
+  border: none;
+  width: 12em;
+  left: 50%;
+  margin-left: -6em;
+  display: block;
+  top: 1.125em;
+  padding: 0;
+  text-align: center;
+  font-family: "adelle", serif;
+}
+a#logo:hover {
+  border: 0;
+}
+a#logo h1 {
+  font-size: 3.25em;
+  color: #fff;
+  font-weight: 600;
+}
+a#logo h1 b {
+  color: #fcb614;
+}
+.slide {
+  position: relative;
+  background: #ffffff;
+}
+.slide .next {
+  display: block;
+  position: absolute;
+  bottom: 0.25em;
+  width: 4em;
+  text-align: center;
+  left: 50%;
+  margin-left: -2em;
+  font-size: 4em;
+  text-decoration: none;
+  color: #d1d8d8;
+  -webkit-font-smoothing: antialiased;
+}
+.slide .content {
+  width: 35em;
+  position: relative;
+}
+.slide .btn {
+  width: 33%;
+}
+.slide.centered {
+  text-align: center;
+}
+.slide.centered .content,
+.slide.centered .btn {
+  margin: 0 auto;
+}
+#intro {
+  position: relative;
+  overflow: hidden;
+}
+#intro .content {
+  width: 100%;
+}
+#intro .btn {
+  width: 10em;
+  color: #2e3a3a;
+}
+#intro .btn:hover {
+  color: #fff;
+}
+#intro .big-un {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #000;
+}
+#intro .big-un img {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+#word-art {
+  margin: 0 auto;
+  margin-bottom: 4em;
+  width: 100%;
+  color: #ffffff;
+}
+#word-art #time,
+#word-art #date {
+  display: block;
+  font-family: "deming";
+  font-size: 2.25em;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 3px 3px 0px rgba(85, 99, 99, 0.5), -3px -3px 0px #171e1e;
+  line-height: 0.8;
+  padding: 0.5em 0 0.5em 0;
+}
+#word-art #time {
+  border-bottom: 3px double #fcb614;
+}
+#word-art #date {
+  border-top: 3px double #fcb614;
+  margin-top: -1.25em;
+}
+#word-art #hack {
+  font-family: "sullivan";
+  text-transform: uppercase;
+  font-size: 18em;
+  font-weight: normal;
+  text-shadow: 6px 6px 0px rgba(85, 99, 99, 0.5), -6px -6px 0px #171e1e;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: -10px;
+  padding: 0;
+}
+#word-art #hack span {
+  color: #fcb614;
+}
+#junior {
+  background: #fcb614;
+}
+#junior p {
+  color: #fef0d0;
+}
+#junior .btn:after {
+  border-color: #fee2a1;
+}
+#hackathon {
+  background: #f9f9f9;
+}
+#insights {
+  background: #171e1e;
+}
+#insights h1,
+#insights h2,
+#insights h3 {
+  color: #fff;
+}
+#insights p {
+  color: #a6b2b1;
+}
