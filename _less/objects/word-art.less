@@ -1,0 +1,40 @@
+#word-art {
+  margin: 0 auto;
+  margin-bottom: 4em;
+  width: 100%;
+  color: #ffffff;
+  #time, #date {
+    display: block;
+    font-family: "Deming EP";
+    font-size: 2.25em;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-shadow:3px 3px 0px fade(@mono-80, 50%), -3px -3px 0px darken(@mono, 10%);
+    line-height: 0.8;
+    padding: 0.5em 0 0.25em 0;
+  }
+
+  #time {
+    border-bottom: 3px double @primary;
+  }
+
+  #date {
+    border-top: 3px double @primary;
+  }
+
+  #hack {
+    font-family: "Sullivan-Regular";
+    text-transform: uppercase;
+    font-size: 18em;
+    font-weight: normal;
+    text-shadow:6px 6px 0px fade(@mono-80, 50%), -6px -6px 0px darken(@mono, 10%);
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    line-height: 0.9;
+    color: #fff;
+    letter-spacing: -10px;
+    span {
+      color: @primary;
+    }
+  }
+}
