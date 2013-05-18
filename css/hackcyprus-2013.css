@@ -217,6 +217,11 @@ h1 {
   margin-bottom: 0.75em;
   -webkit-font-smoothing: antialiased;
 }
+h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
 p {
   font-size: 1.25em;
   font-weight: 300;
@@ -355,11 +360,11 @@ a {
   border-color: #a6b2b1;
   border-style: dotted;
 }
-#site-nav a.selected {
+#site-nav li.selected a {
   border-color: #ffffff;
   color: #ffffff;
 }
-#site-nav a.selected:hover {
+#site-nav li.selected a:hover {
   border-style: solid;
 }
 a#logo {
@@ -394,14 +399,15 @@ a#logo h1 b {
   display: block;
   position: absolute;
   bottom: 0.25em;
-  width: 4em;
+  width: 1em;
   text-align: center;
-  left: 50%;
+  right: 0.125em;
   margin-left: -2em;
-  font-size: 4em;
+  font-size: 3em;
   text-decoration: none;
   color: #d1d8d8;
   -webkit-font-smoothing: antialiased;
+  border: 0;
 }
 .slide .content {
   width: 35em;
@@ -730,11 +736,14 @@ button.close {
 .modal-body h1 {
   font-size: 1.5em;
   margin: 0.25em 0 1.5em 0;
+  text-align: center;
+  color: #2e3a3a !important;
 }
 .modal-body h1 b {
   font-weight: 600;
   border-bottom: 3px solid #fcb614;
   display: inline-block;
+  color: #2e3a3a;
 }
 .modal-form {
   margin-bottom: 0;
