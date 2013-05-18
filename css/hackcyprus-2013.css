@@ -420,6 +420,7 @@ a#logo h1 b {
 #intro {
   position: relative;
   overflow: hidden;
+  background: #2e3a3a;
 }
 #intro .content {
   width: 100%;
@@ -439,8 +440,8 @@ a#logo h1 b {
 }
 #intro .big-un img {
   display: block;
-  height: 100%;
   margin: 0 auto;
+  height: 100%;
 }
 #word-art {
   margin: 0 auto;
@@ -504,6 +505,58 @@ a#logo h1 b {
 }
 #insights p {
   color: #a6b2b1;
+}
+#team {
+  background: #d1d8d8;
+}
+#team .content {
+  width: 60em;
+}
+#team #people {
+  zoom: 1;
+  margin-bottom: 4em;
+}
+#team #people:before,
+#team #people:after {
+  content: "";
+  display: table;
+}
+#team #people:after {
+  clear: both;
+}
+#team #people li {
+  float: left;
+  width: 20%;
+  margin: 0 2.5%;
+}
+#team #people .person {
+  border: 2px solid #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 1em;
+}
+#team #people .person img {
+  width: 100%;
+}
+#team #people .person h1 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #2e3a3a;
+}
+#team #people .person p {
+  font-style: italic;
+  font-size: 0.875em;
+  color: #556363;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px dotted #fff;
+}
+#team #people .person a {
+  font-size: 1em;
+  color: #fff;
+  border: 0;
+  font-weight: 300;
 }
 #supporters p {
   font-size: 1em;
