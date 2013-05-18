@@ -1,0 +1,61 @@
+#supporters {
+
+  p {
+    font-size: 1em;
+  }
+
+  #logos-large, #logos-medium, #logos-small  {
+    .clearfix;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    .sans;
+    color: @mono-40;
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+  }
+
+  .supporter {
+    background: @mono-20;
+    float: left;
+    a {
+      border: 2px solid #fff;
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #logos-large {
+    .supporter {
+      width: 50%;
+    }
+    a {
+      height: 8em;
+    }
+  }
+
+  #logos-medium {
+    .supporter {
+      width: 33%;
+    }
+    a {
+      height: 6em;
+    }
+  }
+
+
+  #logos-small {
+    .supporter {
+      width: 20%;
+    }
+    a {
+      height: 4em;
+    }
+  }
+
+}
