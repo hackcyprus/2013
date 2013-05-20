@@ -8,7 +8,7 @@ $.slideSize = function(){
     var topPosition  = (slideHeight-contentHeight)/2;
     
     $(this).css("height", slideHeight);
-    $(this).find(".content").css("top", topPosition+35);
+    $(this).find(".content").css("top", topPosition);
     
   });
 
