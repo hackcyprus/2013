@@ -1,8 +1,7 @@
 #hackathon {
   background-color: @mono;
-  background-image: url(/images/code.png);
-  background-repeat: repeat-y;
-  background-position: 95% 0px;
+  background-image: url(/images/hack-bg.jpg);
+  background-size: cover;
 
   h1 {
     color: @primary;
@@ -11,7 +10,9 @@
     color: @mono-40;
   }
 .content {
-  background: @mono;
+  background: fade(@mono, 95%);
+  padding: 2em;
+  .border-radius(3px);
 }
 
   .next, .prev {
