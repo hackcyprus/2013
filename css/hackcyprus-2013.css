@@ -457,7 +457,20 @@ a#logo h1 b {
   position: relative;
   background: #ffffff;
 }
-.slide .next {
+.slide .content-inner {
+  padding: 2em;
+}
+.slide .btn {
+  width: 40%;
+}
+.centered {
+  text-align: center;
+}
+.centered .content,
+.centered .btn {
+  margin: 0 auto;
+}
+.next {
   display: block;
   position: absolute;
   bottom: 0.25em;
@@ -471,7 +484,7 @@ a#logo h1 b {
   -webkit-font-smoothing: antialiased;
   border: 0;
 }
-.slide .prev {
+.prev {
   display: block;
   position: absolute;
   top: 0.5em;
@@ -484,19 +497,6 @@ a#logo h1 b {
   color: #d1d8d8;
   -webkit-font-smoothing: antialiased;
   border: 0;
-}
-.slide .content-inner {
-  padding: 2em;
-}
-.slide .btn {
-  width: 40%;
-}
-.centered {
-  text-align: center;
-}
-.centered .content,
-.centered .btn {
-  margin: 0 auto;
 }
 #intro {
   position: relative;
@@ -664,18 +664,38 @@ a#logo h1 b {
   color: #171b1e;
 }
 #insights {
-  background: #010101;
+  background-image: url(/images/eyes.png);
+  background-color: #f9f9f9;
+  background-repeat: no-repeat;
+  background-position: 5% 30%;
 }
-#insights h1,
-#insights h2,
-#insights h3 {
-  color: #fff;
+#insights .content {
+  float: right;
+}
+#insights h1 {
+  color: #01848c;
+  text-shadow: 10px 6px 0px #85f8ff;
+}
+#insights h2 {
+  color: #556363;
 }
 #insights p {
-  color: #a6b2b1;
+  color: #7c8a8b;
 }
 #team {
-  background: #d1d8d8;
+  background: #fcb614;
+}
+#team .next,
+#team .prev {
+  color: #fdd372;
+}
+#team h1 {
+  font-weight: 300;
+  font-family: "deming";
+  font-size: 1.875em;
+  margin-bottom: 2em;
+  letter-spacing: 1px;
+  color: #fee2a1;
 }
 #team .content {
   width: 60em;
@@ -698,7 +718,7 @@ a#logo h1 b {
   margin: 0 2.5%;
 }
 #team #people .person {
-  border: 2px solid #fff;
+  border: 2px solid #fdd372;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -711,6 +731,9 @@ a#logo h1 b {
   font-size: 1.25em;
   font-weight: 600;
   color: #171b1e;
+  font-family: "adelle", serif;
+  text-transform: none;
+  letter-spacing: normal;
 }
 #team #people .person p {
   font-style: italic;
@@ -721,37 +744,55 @@ a#logo h1 b {
   border-bottom: 2px dotted #fff;
 }
 #team #people .person a {
-  font-size: 1em;
+  font-size: 0.875em;
   color: #fff;
   border: 0;
   font-weight: 300;
 }
+footer {
+  text-align: center;
+  padding: 2em 0;
+  color: #556363;
+}
 #supporters {
   background: #fff;
   padding: 5em 0;
+  position: relative;
 }
 #supporters p {
   font-size: 1em;
 }
-#supporters #logos-large,
-#supporters #logos-medium,
-#supporters #logos-small {
+#supporters #tera,
+#supporters #giga,
+#supporters #mega,
+#supporters #kilo {
   zoom: 1;
   margin-bottom: 2em;
 }
-#supporters #logos-large:before,
-#supporters #logos-medium:before,
-#supporters #logos-small:before,
-#supporters #logos-large:after,
-#supporters #logos-medium:after,
-#supporters #logos-small:after {
+#supporters #tera:before,
+#supporters #giga:before,
+#supporters #mega:before,
+#supporters #kilo:before,
+#supporters #tera:after,
+#supporters #giga:after,
+#supporters #mega:after,
+#supporters #kilo:after {
   content: "";
   display: table;
 }
-#supporters #logos-large:after,
-#supporters #logos-medium:after,
-#supporters #logos-small:after {
+#supporters #tera:after,
+#supporters #giga:after,
+#supporters #mega:after,
+#supporters #kilo:after {
   clear: both;
+}
+#supporters h1 {
+  font-weight: 300;
+  font-family: "deming";
+  font-size: 1.875em;
+  margin-bottom: 2em;
+  letter-spacing: 1px;
+  color: #7c8a8b;
 }
 #supporters h2 {
   font-size: 0.75em;
@@ -762,33 +803,43 @@ a#logo h1 b {
   margin-bottom: 1.5em;
 }
 #supporters .supporter {
-  background: #d1d8d8;
+  background: #fff;
   float: left;
+  outline: 2px dotted #d1d8d8;
 }
 #supporters .supporter a {
   border: 2px solid #fff;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 #supporters .supporter a img {
+  display: block;
   width: 100%;
 }
-#supporters #logos-large .supporter {
+#supporters #tera .supporter {
   width: 50%;
 }
-#supporters #logos-large a {
+#supporters #tera a {
   height: 8em;
 }
-#supporters #logos-medium .supporter {
+#supporters #giga .supporter {
   width: 33%;
 }
-#supporters #logos-medium a {
+#supporters #giga a {
   height: 6em;
 }
-#supporters #logos-small .supporter {
+#supporters #mega .supporter {
   width: 20%;
 }
-#supporters #logos-small a {
+#supporters #mega a {
   height: 4em;
+}
+#supporters #kilo .supporter {
+  width: 16.5%;
+}
+#supporters #kilo a {
+  height: 3.5em;
 }
 .fade {
   opacity: 0;

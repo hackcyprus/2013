@@ -1,14 +1,24 @@
 #supporters {
   background: #fff;
   padding: 5em 0;
+  position: relative;
 
   p {
     font-size: 1em;
   }
 
-  #logos-large, #logos-medium, #logos-small  {
+  #tera, #giga, #mega, #kilo {
     .clearfix;
     margin-bottom: 2em;
+  }
+
+  h1 {
+      font-weight: 300;
+  font-family: "deming";
+  font-size: 1.875em;
+margin-bottom: 2em;
+letter-spacing: 1px;
+color: @mono-60;
   }
 
   h2 {
@@ -21,18 +31,23 @@
   }
 
   .supporter {
-    background: @mono-20;
+    background: #fff;
     float: left;
+    outline: 2px dotted @mono-20;
     a {
       border: 2px solid #fff;
       display: block;
+      width: 100%;
+      height: 100%;
       img {
+        
+        display: block;
         width: 100%;
       }
     }
   }
 
-  #logos-large {
+  #tera {
     .supporter {
       width: 50%;
     }
@@ -41,7 +56,7 @@
     }
   }
 
-  #logos-medium {
+  #giga {
     .supporter {
       width: 33%;
     }
@@ -51,12 +66,21 @@
   }
 
 
-  #logos-small {
+  #mega {
     .supporter {
       width: 20%;
     }
     a {
       height: 4em;
+    }
+  }
+
+   #kilo {
+    .supporter {
+      width: 16.5%;
+    }
+    a {
+      height: 3.5em;
     }
   }
 

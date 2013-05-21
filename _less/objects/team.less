@@ -1,7 +1,18 @@
 #team {
-  background: @mono-20;
+  background: @primary;
 
+  .next, .prev {
+    color: @primary-60;
+  }
 
+  h1 {
+      font-weight: 300;
+  font-family: "deming";
+  font-size: 1.875em;
+margin-bottom: 2em;
+letter-spacing: 1px;
+color: @primary-40;
+  }
   .content {
     width: 60em;
   }
@@ -18,7 +29,7 @@
     }
 
     .person {
-      border: 2px solid #fff;
+      border: 2px solid @primary-60;
       .border-radius(3px);
       padding: 1em;
 
@@ -29,6 +40,9 @@
         font-size: 1.25em;
         font-weight: 600;
         color: @mono;
+        .serif;
+        text-transform: none;
+        letter-spacing: normal;
       }
       p {
         font-style: italic;
@@ -39,7 +53,7 @@
         border-bottom: 2px dotted #fff;
       }
       a {
-        font-size: 1em;
+        font-size: 0.875em;
         color: #fff;
         border: 0;
         font-weight: 300;
@@ -48,4 +62,10 @@
 
   }
 
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+  color: @mono-80;
 }
