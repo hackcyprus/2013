@@ -655,9 +655,8 @@ a#logo h1 b {
 }
 #hackathon {
   background-color: #171b1e;
-  background-image: url(/images/code.png);
-  background-repeat: repeat-y;
-  background-position: 95% 0px;
+  background-image: url(/images/hack-bg.jpg);
+  background-size: cover;
 }
 #hackathon h1 {
   color: #fcb614;
@@ -666,7 +665,11 @@ a#logo h1 b {
   color: #a6b2b1;
 }
 #hackathon .content {
-  background: #171b1e;
+  background: rgba(23, 27, 30, 0.95);
+  padding: 2em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 #hackathon .next,
 #hackathon .prev {
@@ -695,7 +698,7 @@ a#logo h1 b {
   color: #7c8a8b;
 }
 #team {
-  background: #171b1e;
+  background-color: #171b1e;
   background-image: url(/images/team-bg.jpg);
   background-size: cover;
   padding: 8em 0 6em 0;
