@@ -1,8 +1,12 @@
 #team {
-  background: @primary;
+  background: @mono;
+  background-image: url(/images/team-bg.jpg);
+  background-size: cover;
+  padding: 8em 0 6em 0;
+  position: relative;
 
   .next, .prev {
-    color: @primary-60;
+    color: @mono-20;
   }
 
   h1 {
@@ -11,10 +15,10 @@
   font-size: 1.875em;
 margin-bottom: 2em;
 letter-spacing: 1px;
-color: @primary-40;
+color: @mono-20;
   }
   .content {
-    width: 60em;
+    width: 40em;
   }
 
   #people {
@@ -23,49 +27,39 @@ color: @primary-40;
 
     li {
       float: left;
-      width: 20%;
-      margin: 0 2.5%;
+      width: 30.75%;
+      margin: 0 1.25%;
 
     }
 
     .person {
-      border: 2px solid @primary-60;
+      background: #fff;
       .border-radius(3px);
-      padding: 1em;
+      padding: 1.25em 1.5em;
+      margin-bottom: 1em;
 
       img {
         width: 100%;
       }
       h1 {
-        font-size: 1.25em;
-        font-weight: 600;
+        font-size: 1.125em;
+        font-weight: 300;
         color: @mono;
         .serif;
         text-transform: none;
         letter-spacing: normal;
+        margin: 0 0 1em 0;
       }
-      p {
-        font-style: italic;
-        font-size: 0.875em;
-        color: @mono-80;
-        padding-bottom: 1em;
-        margin-bottom: 1em;
-        border-bottom: 2px dotted #fff;
-      }
+
       a {
         font-size: 0.875em;
         color: #fff;
         border: 0;
         font-weight: 300;
+        width: auto;
       }
     }
 
   }
 
-}
-
-footer {
-  text-align: center;
-  padding: 2em 0;
-  color: @mono-80;
 }

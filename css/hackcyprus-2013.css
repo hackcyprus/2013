@@ -190,6 +190,18 @@ body {
   width: 35em;
   position: relative;
 }
+footer {
+  text-align: center;
+  padding: 4em 0;
+  font-size: 0.75em;
+  background: #171b1e;
+}
+footer p {
+  color: #d1d8d8;
+}
+footer p a {
+  color: #fcb614;
+}
 @font-face {
   font-family: 'deming';
   src: url('/fonts/deming_ep-webfont.eot');
@@ -247,7 +259,7 @@ a {
   font-weight: 600;
   text-decoration: none;
   color: #171b1e;
-  padding: 1em 2em;
+  padding: 1em 0;
   text-align: center;
   position: relative;
   background: #d1d8d8;
@@ -266,7 +278,7 @@ a {
 }
 .btn.secondary {
   background: #1bb1ba;
-  color: #85f8ff;
+  color: #fff;
 }
 .btn.mono {
   background: #171b1e;
@@ -509,8 +521,9 @@ a#logo h1 b {
   width: 100%;
 }
 #intro .btn {
-  width: 10em;
+  width: 14em;
   color: #171b1e;
+  padding: 1.25em 0;
 }
 #intro .btn:hover {
   color: #fff;
@@ -644,17 +657,16 @@ a#logo h1 b {
   background-color: #171b1e;
   background-image: url(/images/code.png);
   background-repeat: repeat-y;
-  -webkit-animation: codescroll 6s infinite linear;
-  -moz-animation: codescroll 6s infinite linear;
-  -ms-animation: codescroll 6s infinite linear;
-  -o-animation: codescroll 6s infinite linear;
-  animation: codescroll 6s infinite linear;
+  background-position: 95% 0px;
 }
 #hackathon h1 {
   color: #fcb614;
 }
 #hackathon h2 {
   color: #a6b2b1;
+}
+#hackathon .content {
+  background: #171b1e;
 }
 #hackathon .next,
 #hackathon .prev {
@@ -683,11 +695,15 @@ a#logo h1 b {
   color: #7c8a8b;
 }
 #team {
-  background: #fcb614;
+  background: #171b1e;
+  background-image: url(/images/team-bg.jpg);
+  background-size: cover;
+  padding: 8em 0 6em 0;
+  position: relative;
 }
 #team .next,
 #team .prev {
-  color: #fdd372;
+  color: #d1d8d8;
 }
 #team h1 {
   font-weight: 300;
@@ -695,10 +711,10 @@ a#logo h1 b {
   font-size: 1.875em;
   margin-bottom: 2em;
   letter-spacing: 1px;
-  color: #fee2a1;
+  color: #d1d8d8;
 }
 #team .content {
-  width: 60em;
+  width: 40em;
 }
 #team #people {
   zoom: 1;
@@ -714,45 +730,35 @@ a#logo h1 b {
 }
 #team #people li {
   float: left;
-  width: 20%;
-  margin: 0 2.5%;
+  width: 30.75%;
+  margin: 0 1.25%;
 }
 #team #people .person {
-  border: 2px solid #fdd372;
+  background: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  padding: 1em;
+  padding: 1.25em 1.5em;
+  margin-bottom: 1em;
 }
 #team #people .person img {
   width: 100%;
 }
 #team #people .person h1 {
-  font-size: 1.25em;
-  font-weight: 600;
+  font-size: 1.125em;
+  font-weight: 300;
   color: #171b1e;
   font-family: "adelle", serif;
   text-transform: none;
   letter-spacing: normal;
-}
-#team #people .person p {
-  font-style: italic;
-  font-size: 0.875em;
-  color: #556363;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px dotted #fff;
+  margin: 0 0 1em 0;
 }
 #team #people .person a {
   font-size: 0.875em;
   color: #fff;
   border: 0;
   font-weight: 300;
-}
-footer {
-  text-align: center;
-  padding: 2em 0;
-  color: #556363;
+  width: auto;
 }
 #supporters {
   background: #fff;
@@ -952,12 +958,12 @@ button.close {
 }
 .modal-body h1 {
   font-family: "adelle", serif;
-  text-transform: none;
   letter-spacing: normal;
   font-size: 1.5em;
   margin: 0.25em 0 1.5em 0;
   text-align: center;
-  color: #171b1e !important;
+  color: #171b1e;
+  text-transform: none;
 }
 .modal-body h1 b {
   font-weight: 600;
