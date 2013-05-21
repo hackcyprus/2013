@@ -1,5 +1,5 @@
 // Make slides fit screen
-$.slideSize = function(){
+$.fn.slideSize = function(){
 
   $(".slide").each(function() {
     
@@ -16,7 +16,7 @@ $.slideSize = function(){
 
 
 $(document).ready(function(){
-  $.slideSize();
+  $.fn.slideSize();
 
   // Smooth scrolling
   $('a[href^="#"]').on('click',function (e) {
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 // Listen for window resize events, debounce and call them again.
 $(window).smartresize(function(){
-  $.slideSize();
+  $.fn.slideSize();
 });
 
 
