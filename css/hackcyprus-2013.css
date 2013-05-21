@@ -598,9 +598,6 @@ a#logo h1 b {
 #junior .prev {
   color: #fff;
 }
-#junior .content {
-  padding-bottom: 5em;
-}
 #junior h1 {
   color: #086A77;
   font-family: "sullivan";
@@ -849,6 +846,70 @@ a#logo h1 b {
 }
 #supporters #kilo a {
   height: 3.5em;
+}
+#slick-share {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  background: #171b1e;
+  z-index: 99999;
+  color: #fff;
+  height: 2.5em;
+  width: 2.25em;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: width linear 0.2s;
+  -moz-transition: width linear 0.2s;
+  -o-transition: width linear 0.2s;
+  transition: width linear 0.2s;
+  border-right: 0.25em solid #fcb614;
+}
+#slick-share #reveal {
+  line-height: 1;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  width: 2.5em;
+  background: #fcb614;
+}
+#slick-share #reveal span {
+  display: block;
+  text-align: center;
+  height: 1em;
+  top: 50%;
+  margin-top: -0.5em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 2em;
+}
+#slick-share:hover {
+  width: 15em;
+}
+#slick-share #networks {
+  margin-left: 3.5em;
+  zoom: 1;
+  width: 16em;
+  padding: 10px 0 0 0;
+}
+#slick-share #networks:before,
+#slick-share #networks:after {
+  content: "";
+  display: table;
+}
+#slick-share #networks:after {
+  clear: both;
+}
+#slick-share #ss-facebook {
+  float: left;
+  width: 5.5em;
+}
+#slick-share #ss-twitter {
+  float: left;
+  width: 5.5em;
 }
 .fade {
   opacity: 0;

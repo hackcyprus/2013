@@ -1,0 +1,59 @@
+#slick-share {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  background: @mono;
+  z-index: 99999;
+  color: #fff;
+  height: 2.5em;
+  width: 2.25em;
+  overflow: hidden;
+  cursor: pointer;
+  .transition(width linear .2s);
+  border-right:0.25em solid @primary;
+  
+  #reveal {
+    line-height: 1;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    width: 2.5em;
+    background: @primary;
+    span {
+      display: block;
+      text-align: center;
+      height: 1em;
+      top: 50%;
+      margin-top: -0.5em;
+      position: absolute;
+      left: 0;
+      right: 0;
+      font-size: 2em;
+    }
+  }
+
+  &:hover {
+    width: 15em;
+  }
+
+  #networks {
+    margin-left: 3.5em;
+    .clearfix;
+    width: 16em;
+    padding: 10px 0 0 0;
+
+  }
+  #ss-facebook {
+    float: left;
+    width: 5.5em
+  }
+  #ss-twitter {
+    float: left;
+    width: 5.5em
+  }
+
+}
+
