@@ -1,3 +1,26 @@
 #hackathon {
-  background: #f9f9f9;
+  background-color: @mono;
+  background-image: url(/images/code.png);
+  background-repeat: repeat-y;
+   -webkit-animation: codescroll 26s infinite linear;
+      -moz-animation: codescroll 26s infinite linear;
+      -ms-animation: codescroll 26s infinite linear;
+      -o-animation: codescroll 26s infinite linear;
+      animation: codescroll 26s infinite linear;
+
+  h1 {
+    color: @primary;
+  }
+  h2 {
+    color: @mono-40;
+  }
+
+  .next, .prev {
+    color: lighten(@mono,7%);
+  }
+
+  .btn {
+    color: @mono;
+  }
+
 }

@@ -186,6 +186,10 @@ textarea {
 body {
   background: #171b1e;
 }
+.content {
+  width: 35em;
+  position: relative;
+}
 @font-face {
   font-family: 'deming';
   src: url('/fonts/deming_ep-webfont.eot');
@@ -212,15 +216,18 @@ body {
   color: #171b1e;
 }
 h1 {
-  font-size: 3.25em;
-  font-weight: 100;
-  margin-bottom: 0.75em;
-  -webkit-font-smoothing: antialiased;
+  font-family: "sullivan";
+  text-transform: uppercase;
+  font-size: 9em;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin: 0;
 }
 h2 {
-  font-size: 1.25em;
-  font-weight: 600;
-  margin-bottom: 1em;
+  font-weight: 300;
+  font-family: "deming";
+  font-size: 0.875em;
+  margin-bottom: 2em;
 }
 p {
   font-size: 1.125em;
@@ -311,6 +318,46 @@ a {
     background-position: -762px 0px;
   }
 }
+@-webkit-keyframes codescroll {
+  from {
+    background-position: 90% 0;
+  }
+  to {
+    background-position: 90% -691px;
+  }
+}
+@-moz-keyframes codescroll {
+  from {
+    background-position: 90% 0;
+  }
+  to {
+    background-position: 90% -691px;
+  }
+}
+@-ms-keyframes codescroll {
+  from {
+    background-position: 90% 0;
+  }
+  to {
+    background-position: 90% -691px;
+  }
+}
+@-o-keyframes codescroll {
+  from {
+    background-position: 90% 0;
+  }
+  to {
+    background-position: 90% -691px;
+  }
+}
+@keyframes codescroll {
+  from {
+    background-position: 90% 0;
+  }
+  to {
+    background-position: 90% -691px;
+  }
+}
 #site-nav {
   position: absolute;
   top: 0;
@@ -399,6 +446,8 @@ a#logo h1 {
   font-size: 2.75em;
   color: #fff;
   font-weight: 700;
+  font-family: "adelle", serif;
+  text-transform: none;
 }
 a#logo h1 b {
   color: #fcb614;
@@ -416,15 +465,25 @@ a#logo h1 b {
   text-align: center;
   right: 0.125em;
   margin-left: -2em;
-  font-size: 3em;
+  font-size: 2.5em;
   text-decoration: none;
   color: #d1d8d8;
   -webkit-font-smoothing: antialiased;
   border: 0;
 }
-.slide .content {
-  width: 35em;
-  position: relative;
+.slide .prev {
+  display: block;
+  position: absolute;
+  top: 0.5em;
+  width: 1em;
+  text-align: center;
+  right: 0.125em;
+  margin-left: -2em;
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #d1d8d8;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
 }
 .slide .content-inner {
   padding: 2em;
@@ -432,11 +491,11 @@ a#logo h1 b {
 .slide .btn {
   width: 40%;
 }
-.slide.centered {
+.centered {
   text-align: center;
 }
-.slide.centered .content,
-.slide.centered .btn {
+.centered .content,
+.centered .btn {
   margin: 0 auto;
 }
 #intro {
@@ -467,22 +526,22 @@ a#logo h1 b {
 #word-art #date {
   display: block;
   font-family: "deming";
-  font-size: 1.75em;
+  font-size: 1.5em;
   color: #d1d8d8;
   -webkit-font-smoothing: antialiased;
   text-shadow: 3px 3px 0px #000000;
   line-height: 0.8;
   padding: 0.5em 0 0.5em 0;
-  letter-spacing: 4px;
-  border-top: 2px dotted #a6b2b1;
-  border-bottom: 2px dotted #a6b2b1;
+  letter-spacing: 2px;
+  border-top: 2px dotted #171b1e;
+  border-bottom: 2px dotted #171b1e;
 }
 #word-art #time {
-  width: 17.75em;
+  width: 22em;
   margin: 0 auto;
 }
 #word-art #date {
-  width: 19em;
+  width: 22em;
   margin: 0 auto;
   margin-top: -1em;
 }
@@ -511,8 +570,20 @@ a#logo h1 b {
   margin-bottom: 2em;
   margin-top: -2em;
 }
+#manifesto h1 {
+  color: #fcb614;
+}
+#manifesto h2 {
+  color: #556363;
+}
 #junior {
   background: #B9ECEC;
+}
+#junior .next {
+  color: #01848c;
+}
+#junior .prev {
+  color: #fff;
 }
 #junior .content {
   padding-bottom: 5em;
@@ -541,7 +612,7 @@ a#logo h1 b {
   background-repeat: repeat-x;
   height: 130px;
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   left: 0px;
   right: 0px;
 }
@@ -570,7 +641,27 @@ a#logo h1 b {
   animation: bgscroll 31s infinite linear;
 }
 #hackathon {
-  background: #f9f9f9;
+  background-color: #171b1e;
+  background-image: url(/images/code.png);
+  background-repeat: repeat-y;
+  -webkit-animation: codescroll 26s infinite linear;
+  -moz-animation: codescroll 26s infinite linear;
+  -ms-animation: codescroll 26s infinite linear;
+  -o-animation: codescroll 26s infinite linear;
+  animation: codescroll 26s infinite linear;
+}
+#hackathon h1 {
+  color: #fcb614;
+}
+#hackathon h2 {
+  color: #a6b2b1;
+}
+#hackathon .next,
+#hackathon .prev {
+  color: #262d32;
+}
+#hackathon .btn {
+  color: #171b1e;
 }
 #insights {
   background: #010101;
@@ -634,6 +725,10 @@ a#logo h1 b {
   color: #fff;
   border: 0;
   font-weight: 300;
+}
+#supporters {
+  background: #fff;
+  padding: 5em 0;
 }
 #supporters p {
   font-size: 1em;
@@ -805,6 +900,9 @@ button.close {
   padding: 2em;
 }
 .modal-body h1 {
+  font-family: "adelle", serif;
+  text-transform: none;
+  letter-spacing: normal;
   font-size: 1.5em;
   margin: 0.25em 0 1.5em 0;
   text-align: center;
