@@ -26,18 +26,26 @@ a {
     color: @primary-20;
     &:hover {
       color: @mono;
+      background: lighten(@primary, 10%);
     }
   }
 
   &.secondary {
     background: @secondary-60;
     color: #fff;
-
+    &:hover {
+      color: @mono;
+      background: lighten(@secondary-60, 10%);
+    }
   }
 
   &.mono {
     background: @mono;
     color: @mono-20;
+    &:hover {
+      color: @mono;
+      background: lighten(@mono, 10%);
+    }
   }
 
   &.inverse {
