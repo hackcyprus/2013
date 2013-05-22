@@ -26,6 +26,7 @@ WebFontConfig = {
   },
   inactive: function() {
     $.fn.slideSize();
+    $('body').fadeIn();
   },
 };
 (function() {
@@ -41,7 +42,7 @@ WebFontConfig = {
 
 
 $(document).ready(function(){
- 
+  
 
   // Smooth scrolling
   $('a[href^="#"]').on('click',function (e) {
