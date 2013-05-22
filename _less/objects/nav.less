@@ -12,41 +12,44 @@
 
   ul {
     .clearfix;
+    width: 45%;
 
     &.left-nav {
       float: left;
-      li {
-        margin-right: 1em
-      }
+     
     }
 
     &.right-nav {
       float: right;
-      li {
-        margin-left: 1em;
-      }
+      
     }
 
   }
 
   li {
     float: left;
+    width: 33%;
   }
 
   a {
     .sans;
     text-decoration: none;
-    color: @mono-40;
+    color: @mono-20;
     text-transform: uppercase;
     font-size: 0.75em;
     // border: 1px solid @mono;
-    line-height: 1;
+    line-height: 1.1;
     border: 0;
     display: block;
-    padding: 1.875em 1.5em;
-    font-weight: 600;
+    padding: 1.25em;
+    text-align: center;
+    font-weight: 700;
     -webkit-font-smoothing: antialiased;
     // .border-radius(3px);
+    span {
+      color: @mono-60;
+      font-weight: 500;
+    }
     &:hover {
       background: lighten(@mono, 2%);
       color: @primary;
