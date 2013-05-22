@@ -183,8 +183,12 @@ textarea {
   width: 60em;
   margin: 0 auto;
 }
+html {
+  background: #171b1e;
+}
 body {
   background: #171b1e;
+  display: none;
 }
 .content {
   width: 35em;
@@ -201,20 +205,6 @@ footer p {
 }
 footer p a {
   color: #fcb614;
-}
-@font-face {
-  font-family: 'deming';
-  src: url('/fonts/deming_ep-webfont.eot');
-  src: url('/fonts/deming_ep-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/deming_ep-webfont.woff') format('woff'), url('/fonts/deming_ep-webfont.ttf') format('truetype'), url('/fonts/deming_ep-webfont.svg#deming_epregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'sullivan';
-  src: url('/fonts/sullivan-regular-webfont.eot');
-  src: url('/fonts/sullivan-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/sullivan-regular-webfont.woff') format('woff'), url('/fonts/sullivan-regular-webfont.ttf') format('truetype'), url('/fonts/sullivan-regular-webfont.svg#sullivanregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 .sans {
   font-family: "adelle-sans", sans-serif;
