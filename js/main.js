@@ -18,7 +18,6 @@ WebFontConfig = {
   custom: { families: ['deming', 'sullivan'],
   urls: [ 'fonts/fonts.css' ] },
   loading: function() {
-    
   },
   active: function() {
      $('body').fadeIn();
@@ -27,8 +26,9 @@ WebFontConfig = {
   inactive: function() {
     $.fn.slideSize();
     $('body').fadeIn();
-  },
+  }
 };
+
 (function() {
   var wf = document.createElement('script');
   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
