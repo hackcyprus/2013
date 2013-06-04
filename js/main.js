@@ -91,7 +91,7 @@ $(document).ready(function(){
         });
         $btn.removeClass('fail').val("Thanks, you're now subscribed!");
       } else {
-        $btn.addClass('fail').val('Error! Try again.');
+        $btn.addClass('fail').val('Nope');
         $email.addClass('fail');
       }
     });
