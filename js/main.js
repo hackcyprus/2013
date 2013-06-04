@@ -52,6 +52,10 @@ $(document).ready(function(){
       });
   });
 
+  $(window).scroll(function () {
+    $("#slick-share").removeClass('open');
+  });
+
   // Mailchimp form & JSONP callback
   $('#mc_embed_signup form').on('submit', function(e) {
     var $form = $(this)
