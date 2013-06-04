@@ -18,6 +18,67 @@
     width: 14em;
     color: @mono;
     padding: 1.25em 0;
+    &.fail {
+      color: white;
+    }
   }
-  
+
+  #mc_embed_signup {
+
+    width: 100%;
+
+    span {
+      display: block;
+      font-family: "deming";
+      font-size: 0.8em;
+      color: @mono-20;
+      -webkit-font-smoothing: antialiased;
+      text-shadow: 3px 3px 0px darken(@mono, 30%);
+      line-height: 0.8;
+      letter-spacing: 2px;
+      margin-bottom: 1em;
+    }
+
+    form {
+      width: 27em;
+      margin: 0 auto;
+
+      label {
+        margin-right: 1em;
+        color: white;
+        float: left;
+        .sans;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      #mce-EMAIL {
+        border: none;
+        .border-top-left-radius(2px);
+        .border-bottom-left-radius(2px);
+        width: 16em;
+        padding: 0.75em;
+        float: left;
+        outline: none;
+        .sans;
+      }
+
+      #mce-EMAIL:focus {
+        background-color: #eee;
+      }
+
+      #mc-embedded-subscribe {
+        padding: 0.75em;
+        .border-radius(0px);
+        float: left;
+        .border-top-right-radius(2px);
+        .border-bottom-right-radius(2px);
+        width: 9em;
+        border: none;
+      }
+
+    }
+
+  }
+
 }
