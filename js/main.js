@@ -58,8 +58,11 @@ $(document).ready(function(){
 
   // Mailchimp form & JSONP callback
   $('#mc_embed_signup form').on('submit', function(e) {
-    var $form = $(this)
-      , $btn = $form.find('#mc-embedded-subscribe')
+    var $form = $(this);
+
+    if ($form.hasClass('disabled')) return;
+
+    var $btn = $form.find('#mc-embedded-subscribe')
       , $email = $form.find('#mce-EMAIL')
       , val = $btn.val()
       , deferred = $.ajax({
@@ -83,11 +86,10 @@ $(document).ready(function(){
         }, 200, 'swing', function() {
           $(this).hide();
         });
-        $form.animate({width: '17em'}, 200, 'swing');
-        $btn.animate({width: '17em'}, 200, 'swing', function() {
-          $btn.replaceWith(function() {
-            '<div/>', {html: $(this).html()}
-          });
+        $form.animate({width: '19em'}, 200, 'swing');
+        $btn.animate({width: '19em'}, 200, 'swing', function() {
+          $btn.addClass('disabled').attr('disabled', 'disabled');
+          $form.addClass('disabled');
         });
         $btn.removeClass('fail').val("Thanks, you're now subscribed!");
       } else {
