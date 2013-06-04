@@ -31,6 +31,9 @@ a {
     &.fail {
       color: white;
     }
+    &.disabled {
+      background: @primary;
+    }
   }
 
   &.secondary {
@@ -40,6 +43,9 @@ a {
       color: @mono;
       background: lighten(@secondary-60, 10%);
     }
+    &.disabled {
+      background: @secondary-60;
+    }
   }
 
   &.mono {
@@ -48,6 +54,9 @@ a {
     &:hover {
       color: @mono;
       background: lighten(@mono, 10%);
+    }
+    &.disabled {
+      background: @mono;
     }
   }
 
@@ -66,6 +75,13 @@ a {
     &:hover {
       background-color: lighten(@fail, 10%);
     }
+    &.disabled {
+      background: @fail;
+    }
+  }
+
+  &.disabled {
+    cursor: default;
   }
 
 }
