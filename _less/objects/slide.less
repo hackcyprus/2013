@@ -24,32 +24,39 @@
   }
 }
 
-.next {
-    display: block;
+.next, .prev {
+  background: @primary;
+  z-index: 99999;
+  color: #fff;
+  height: 2.5em;
+  width: 2.5em;
+  display: block;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  right: 1em;
+
+  span {
+    font-size: 2em;
     position: absolute;
-    bottom: 0.25em;
-    width: 1em;
-    text-align: center;
-    right: 0.125em;
-    margin-left: -2em;
-    font-size: 2.5em;
-    text-decoration: none;
-    color: @mono-20;
-    -webkit-font-smoothing: antialiased;
-    border: 0;
+    top: 0.125em;
+    left: 0;
+    right: 0;
+    color: #fff;
   }
+}
+
+.next {
+
+  bottom: 1em;
+  
+    
+    
+    
+      }
 
   .prev {
-    display: block;
-    position: absolute;
-    top: 0.5em;
-    width: 1em;
-    text-align: center;
-    right: 0.125em;
-    margin-left: -2em;
-    font-size: 2.5em;
-    text-decoration: none;
-    color: @mono-20;
-    -webkit-font-smoothing: antialiased;
-    border: 0;
+    top: 1em;
   }
