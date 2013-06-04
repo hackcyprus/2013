@@ -28,6 +28,9 @@ a {
       color: @mono;
       background: lighten(@primary, 10%);
     }
+    &.fail {
+      color: white;
+    }
   }
 
   &.secondary {
@@ -57,4 +60,16 @@ a {
     }
   }
 
+  &.fail {
+    background-color: @fail;
+    color: white;
+    &:hover {
+      background-color: lighten(@fail, 10%);
+    }
+  }
+
+}
+
+input.fail {
+  color: @fail;
 }
