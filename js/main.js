@@ -84,9 +84,7 @@
   });
 
   $(global).on('fonts:loaded', function() {
-    console.log('pre')
     slideSize();
-    console.log('size')
     $('body').css('visibility', 'visible');
   });
 

@@ -3,22 +3,30 @@
   // webfont loader
   // --------------
 
+  var deming = $.Deferred();
+  var sullivan = $.Deferred();
+
+  $.when(deming, sullivan).then(function() {
+    $(global).trigger('fonts:loaded');
+  });
+
   WebFontConfig = {
-    custom: { families: ['deming', 'sullivan'],
-    urls: [ 'fonts/fonts.css' ] },
+    custom: {
+      families: ['deming', 'sullivan'],
+      urls: [ '/css/fonts.css' ]
+    },
+
+    timeout: 10000,
 
     typekit: {
       id: 'bie6xni'
     },
 
-    active: function() {
-      console.log('active')
-      $(global).trigger('fonts:loaded');
-    },
-
-    inactive: function() {
-      console.log('inactive')
-      $(global).trigger('fonts:loaded');
+    // we only care about our custom fonts loading, since they mostly dictate
+    // dimensions on the page
+    fontactive: function(family) {
+      if (family == 'deming') deming.resolve();
+      if (family == 'sullivan') sullivan.resolve();
     }
   };
 
