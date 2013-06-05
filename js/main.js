@@ -41,7 +41,7 @@
         });
         $btn.removeClass('fail').val("Thanks, you're now subscribed!");
       } else {
-        $btn.addClass('fail').val('Nope');
+        $btn.addClass('fail').val('Hm, error!');
         $email.addClass('fail');
       }
     });
