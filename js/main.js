@@ -88,6 +88,10 @@
     $('body').css('visibility', 'visible');
   });
 
+  $(global).on('fonts:loading', function() {
+    $('body').css('visibility', 'hidden');
+  });
+
   $('#mc_embed_signup form').on('submit', mailchimpSubmit);
 
   $(hc.smoothScroller);
