@@ -11,6 +11,10 @@
       id: 'bie6xni'
     },
 
+    loading: function(){
+      $(global).trigger('fonts:loading');
+    },
+
     active: function() {
       $(global).trigger('fonts:active');
     },
