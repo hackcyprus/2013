@@ -1,4 +1,4 @@
-(function(global, hc, $) {
+(function(global, $) {
 
   // webfont loader
   // --------------
@@ -11,16 +11,14 @@
       id: 'bie6xni'
     },
 
-    loading: function(){
-      $(global).trigger('fonts:loading');
-    },
-
     active: function() {
-      $(global).trigger('fonts:active');
+      console.log('active')
+      $(global).trigger('fonts:loaded');
     },
 
     inactive: function() {
-      $(global).trigger('fonts:inactive');
+      console.log('inactive')
+      $(global).trigger('fonts:loaded');
     }
   };
 
@@ -34,4 +32,4 @@
     s.parentNode.insertBefore(wf, s);
   })();
 
-}(window, window.hc, jQuery));
+}(window, jQuery));
