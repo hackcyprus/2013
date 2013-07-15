@@ -1,90 +1,10 @@
-#intro {
-  position: relative;
-  overflow: hidden;
-  background: @mono;
-  background-image: url(/images/header-bg.jpg);
-  background-size: cover;
-
-  .social {
-    height: 1em;
-    margin-top: 2em;
-  }
-
-  .content {
-    width: 100%;
-  }
-
-  .btn {
-    width: 14em;
-    color: @mono;
-    padding: 1.25em 0;
-    &.fail {
-      color: white;
+.intro {
+  padding: 5em 0;
+  h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+    b {
+      color:red;
     }
   }
-
-  #mc_embed_signup {
-
-
-
-    span {
-      display: block;
-      .sans;
-      font-size: 1em;
-      color: @mono-60;
-      -webkit-font-smoothing: antialiased;
-      line-height: 0.8;
-      margin-bottom: 0.875em;
-      font-style: italic;
-    }
-
-    form {
-      width: 26em;
-      margin: 0 auto;
-      padding: 1em;
-      background: @mono;
-      background: rgba(23,27,30,0.6);
-      .border-radius(3px);
-
-      label {
-        margin-right: 1em;
-        color: white;
-        float: left;
-        .sans;
-        font-weight: 600;
-        text-decoration: none;
-      }
-
-      #mce-EMAIL {
-        border: none;
-        .border-top-left-radius(2px);
-        .border-bottom-left-radius(2px);
-        width: 17em;
-        padding: 0.5em 1em;
-        float: left;
-        outline: none;
-        .sans;
-        background:#e0e0e0;
-      }
-
-      #mce-EMAIL:focus {
-        background-color: #fff;
-      }
-
-      #mc-embedded-subscribe {
-        padding: 0.5em 0.75em;
-        .border-radius(0px);
-        float: left;
-        .border-top-right-radius(2px);
-        .border-bottom-right-radius(2px);
-        width: 7em;
-        border: none;
-        color: #fff;
-        -webkit-font-smoothing: antialiased;
-      }
-
-    }
-
-  }
-
 }

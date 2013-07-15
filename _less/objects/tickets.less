@@ -1,0 +1,57 @@
+.row .tickets {}
+
+#tickets {
+  background: white;
+  .clearfix;
+  padding: 0;
+}
+
+.ticket-blurb {
+  float: left;
+  width: 33%;
+
+
+  .event {
+    padding: 4.5em 0em 5em 0;
+    margin: 0em 2em 0em 2em;
+
+    time{
+      text-align: center;
+      display: block;
+      color: @mono-80;
+      margin-bottom: 1em;
+      .serif;
+      font-size: 1.125em;
+      font-weight: 300;
+    }
+    h1 {
+      .brand-font;
+      color: @mono-80;
+      font-size: 4.75em;
+      letter-spacing: -3px;
+      margin-bottom: 0.25em;
+      line-height: 0.9;
+      text-rendering: optimizeLegibility;
+      border-bottom: 4px double @primary;
+    }
+
+    p {
+      font-size: 1em;
+      text-align: center;
+
+      a {
+        font-size: 0.875em;
+        font-weight: 600;
+        color: @secondary-60;
+      }
+    }
+
+    .btn.tickets {
+      display: block;
+      margin:0 auto;
+      font-weight: 300;
+    }
+
+  }
+
+}
