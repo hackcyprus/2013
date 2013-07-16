@@ -681,7 +681,6 @@ a#logo:hover h1 b {
 }
 .speakers {
   zoom: 1;
-  padding: 5em 0;
 }
 .speakers:before,
 .speakers:after {
@@ -692,40 +691,74 @@ a#logo:hover h1 b {
   clear: both;
 }
 .speakers ul {
-  margin-top: 4em;
+  padding: 4em 0;
+  border-left: 1px solid #d1d8d8;
+  margin-left: -1px;
 }
-.speakers .speaker-bio {
-  float: left;
-  width: 25%;
-}
-.speakers .speaker {
-  margin: 1em 1em 1em 1em;
-  border: 1px solid #d1d8d8;
-}
-.speakers .speaker .inner {
-  padding: 1em;
-}
-.speakers .speaker img {
+.speakers .segment {
+  zoom: 1;
   display: block;
-  width: 100%;
-  margin-bottom: 1em;
-  border-radius: 100px;
+  border-top: 1px solid #d1d8d8;
+  margin-bottom: 3em;
 }
-.speakers .speaker h1 {
-  font-size: 1.25em;
-  margin-bottom: 0.5em;
+.speakers .segment:before,
+.speakers .segment:after {
+  content: "";
+  display: table;
 }
-.speakers .speaker h2 {
-  color: #556363;
-  margin-bottom: 1em;
-  border-bottom: 4px solid #d1d8d8;
-  padding: 0 0 1em 0;
-  font-size: 0.875em;
+.speakers .segment:after {
+  clear: both;
 }
-.speakers .speaker p {
-  font-size: 0.875em;
-  margin-bottom: 0;
-  line-height: 1.4;
+.speakers .segment.non-speaker {
+  margin-bottom: 2em;
+}
+.speakers .inner {
+  margin-top: -1em;
+}
+.speakers .meta,
+.speakers img,
+.speakers .no-img,
+.speakers .descr {
+  float: left;
+}
+.speakers .meta {
+  width: 4em;
+  background: #fff;
+  padding: 0 1em;
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+.speakers img {
+  width: 10em;
+  margin-left: 3em;
+  display: block;
+  border-radius: 20em;
+  margin-top: -4em;
+  border: 1em solid #fff;
+}
+.speakers .no-img {
+  text-indent: -9999em;
+  width: 10em;
+  height: 10em;
+  margin-left: 3em;
+  display: block;
+  border-radius: 20em;
+  margin-top: -4em;
+  border: 1em solid transparent;
+}
+.speakers .descr {
+  width: 31em;
+  margin-left: 3em;
+  background: #fff;
+  padding: 1em;
+  margin-top: -2em;
+}
+.speakers .descr h1 {
+  text-align: left;
+  font-size: 1.5em;
+}
+.speakers .descr .title {
+  margin: 0 0 1em 0;
 }
 .intro {
   padding: 5em 0;

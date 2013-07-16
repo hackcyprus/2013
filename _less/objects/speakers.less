@@ -1,46 +1,85 @@
 .speakers {
   .clearfix;
-  padding: 5em 0;
-
   ul {
-    margin-top: 4em;
+    padding: 4em 0;
+    border-left: 1px solid @mono-20;
+    margin-left: -1px
   }
-  .speaker-bio{
-    float: left;
-    width: 25%;
+
+  .segment {
+    .clearfix;
+
+    display: block;
+    border-top: 1px solid @mono-20;
+    margin-bottom: 3em;
+    &.non-speaker {
+      margin-bottom: 2em;
+    }
   }
-  .speaker{
-    margin:1em 1em 1em 1em;
-    border: 1px solid @mono-20;
 
-    .inner{
-      padding: 1em;
+  .inner {
+    margin-top: -1em;
+  }
+
+  .meta,
+  img,
+  .no-img,
+  .descr {
+    float:left;
+  }
+
+
+  time {
+  }
+
+  .meta {
+    width: 4em;
+    background: #fff;
+    padding: 0 1em;
+    margin-left: 2em;
+    margin-top: 0.5em;
+  }
+
+  img {
+    width: 10em;
+    margin-left: 3em;
+    display: block;
+    border-radius: 20em;
+    margin-top: -4em;
+    border: 1em solid #fff;
+  }
+
+  .no-img{
+    text-indent: -9999em;
+    width: 10em;
+    height: 10em;
+    margin-left: 3em;
+    display: block;
+    border-radius: 20em;
+    margin-top: -4em;
+    border: 1em solid transparent;
+  }
+
+  .descr {
+    width: 31em;
+    margin-left: 3em;
+    background: #fff;
+    padding: 1em;
+    margin-top: -2em;
+
+    h1 {
+      text-align: left;
+      font-size: 1.5em;
     }
 
-    img{
-      display: block;
-      width: 100%;
-      margin-bottom: 1em;
-      border-radius: 100px;
+    .title {
+      margin: 0 0 1em 0;
     }
-    h1{
-      font-size: 1.25em;
-      margin-bottom: 0.5em;
-    }
-    h2{
-      color: @mono-80;
-      margin-bottom: 1em;
-      border-bottom: 4px solid @mono-20;
-      padding: 0 0 1em 0;
-      font-size: 0.875em;
-    }
-    p{
-      font-size: 0.875em;
-      margin-bottom: 0;
-      line-height: 1.4;
-    }
-    a{
+
+    p {
+
     }
 
   }
+
 }
