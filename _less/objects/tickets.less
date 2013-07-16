@@ -2,56 +2,53 @@
 
 #tickets {
   background: white;
-  .clearfix;
+
   padding: 0;
+
+  ul {
+    border-right: 1px dotted @mono-20;
+    .clearfix;
+  }
 }
 
 .ticket-blurb {
   float: left;
-  width: 33%;
+  width: 33.333%;
 
+}
 
-  .event {
-    padding: 4.5em 0em 5em 0;
-    margin: 0em 2em 0em 2em;
+.event {
+  padding: 4em 2em;
+  border-left: 1px dotted @mono-20;
 
-    time{
-      text-align: center;
-      display: block;
-      color: @mono-80;
-      margin-bottom: 1em;
-      .serif;
-      font-size: 1.125em;
-      font-weight: 300;
-    }
-    h1 {
-      .brand-font;
-      color: @mono-80;
-      font-size: 4.75em;
-      letter-spacing: -3px;
-      margin-bottom: 0.25em;
-      line-height: 0.9;
-      text-rendering: optimizeLegibility;
-      border-bottom: 4px double @primary;
-    }
+  h1 {
+    .serif;
+    font-size: 2.75em;
+    color: @mono;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+  }
 
-    p {
-      font-size: 1em;
-      text-align: center;
+  time, p {
+    color: @mono-60;
+    display: block;
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
 
-      a {
-        font-size: 0.875em;
-        font-weight: 600;
-        color: @secondary-60;
-      }
-    }
+  .tickets {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    margin-bottom: 1em;
+  }
 
-    .btn.tickets {
-      display: block;
-      margin:0 auto;
-      font-weight: 300;
-    }
-
+  .more {
+    display: block;
+    text-align: center;
+    font-size: 0.75em;
+    border: 0;
   }
 
 }
