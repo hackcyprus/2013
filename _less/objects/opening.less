@@ -1,12 +1,12 @@
 .opening {
   background-image: url(/images/header-bg.jpg);
   background-size: cover;
-  padding: 10em 0 5em 0;
+  padding: 8em 0 4em 0;
 
   h1 {
     text-align: center;
     .serif;
-    color: @mono-20;
+    color: #fff;
     font-size: 3.5em;
     font-weight: 800;
     line-height: 1.2;
@@ -14,7 +14,7 @@
   }
 
   h2 {
-    color: #fff;
+    color: @mono-20;
     .serif;
     font-weight: 100;
     font-style: italic;
@@ -30,4 +30,30 @@
     border: 1px solid @secondary-40;
   }
 
+}
+
+
+.basic-deets {
+  border-top: 4px solid @primary;
+  border-bottom: 1px solid @mono-20;
+  .clearfix;
+
+  .date,
+  .venue,
+  .price{
+    float: left;
+    width: 33%;
+  }
+
+  p {
+    border-left: 1px solid @mono-20;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+    font-size: 0.875em;
+  }
+
+  .price p {
+    border-right: 1px solid @mono-20;
+  }
 }
