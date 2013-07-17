@@ -233,7 +233,7 @@ h1 {
   font-family: "adelle", serif;
   font-size: 2em;
 }
-h1.opening {
+h1.display {
   font-family: "sullivan";
   text-transform: uppercase;
   font-size: 9em;
@@ -247,7 +247,7 @@ h1.opening {
 .section-subhead {
   font-size: 1.25em;
   color: #7c8a8b;
-  line-height: 1.3;
+  line-height: 1.4;
   width: 35em;
   margin: 0 auto;
 }
@@ -256,6 +256,15 @@ h3 {
   font-weight: 300;
   margin-bottom: 0.5em;
   font-family: "adelle", serif;
+}
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #a6b2b1;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 0.5em 0;
 }
 p {
   font-size: 1em;
@@ -439,6 +448,107 @@ input.fail {
     background-position: 90% -691px;
   }
 }
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+}
+@-moz-keyframes shake {
+  0%,
+  100% {
+    -moz-transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -moz-transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -moz-transform: translateX(10px);
+  }
+}
+@-o-keyframes shake {
+  0%,
+  100% {
+    -o-transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -o-transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -o-transform: translateX(10px);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.shake {
+  -webkit-animation: shake 5s infinite;
+  -moz-animation: shake 5s infinite;
+  -o-animation: shake 5s infinite;
+  animation: shake 5s infinite;
+}
 #site-nav {
   position: absolute;
   top: 0;
@@ -529,19 +639,19 @@ a#logo:hover h1 b {
 .opening {
   background-image: url(/images/header-bg.jpg);
   background-size: cover;
-  padding: 10em 0 5em 0;
+  padding: 8em 0 4em 0;
 }
 .opening h1 {
   text-align: center;
   font-family: "adelle", serif;
-  color: #d1d8d8;
+  color: #fff;
   font-size: 3.5em;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 0.5em;
 }
 .opening h2 {
-  color: #fff;
+  color: #d1d8d8;
   font-family: "adelle", serif;
   font-weight: 100;
   font-style: italic;
@@ -554,6 +664,35 @@ a#logo:hover h1 b {
   text-transform: uppercase;
   letter-spacing: normal;
   border: 1px solid #44dae3;
+}
+.basic-deets {
+  border-top: 4px solid #fcb614;
+  border-bottom: 1px solid #d1d8d8;
+  zoom: 1;
+}
+.basic-deets:before,
+.basic-deets:after {
+  content: "";
+  display: table;
+}
+.basic-deets:after {
+  clear: both;
+}
+.basic-deets .date,
+.basic-deets .venue,
+.basic-deets .price {
+  float: left;
+  width: 33%;
+}
+.basic-deets p {
+  border-left: 1px solid #d1d8d8;
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+  font-size: 0.875em;
+}
+.basic-deets .price p {
+  border-right: 1px solid #d1d8d8;
 }
 .big-numbers {
   background: #fcb614;
@@ -761,7 +900,7 @@ a#logo:hover h1 b {
   margin: 0 0 1em 0;
 }
 .intro {
-  padding: 5em 0;
+  padding: 3em 0;
 }
 .intro h1 {
   font-weight: 600;
@@ -769,6 +908,207 @@ a#logo:hover h1 b {
 }
 .intro h1 b {
   color: red;
+}
+.cloudz {
+  background-color: #b9ecec;
+  background-image: url(/images/cloudz/fore.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  padding: 4em 0 6em 0;
+}
+.cloudz h1 {
+  width: 25em;
+  margin: 0 auto 1em auto;
+  line-height: 1.3;
+  color: #014a4e;
+}
+.cloudz h1 b {
+  font-weight: 800;
+}
+.cloudz a {
+  width: 12em;
+  margin: 0 auto;
+  display: block;
+  border: 0;
+}
+.cloudz a img {
+  width: 100%;
+}
+.criteria {
+  padding: 4em 0 0 0;
+}
+.criteria h2.section-subhead {
+  margin-bottom: 2em;
+}
+.progress-bar {
+  zoom: 1;
+  width: 100%;
+  margin: 2em 0;
+}
+.progress-bar:before,
+.progress-bar:after {
+  content: "";
+  display: table;
+}
+.progress-bar:after {
+  clear: both;
+}
+.progress-bar .percent {
+  float: left;
+  background: #d1d8d8;
+}
+.progress-bar .percent.problem {
+  width: 20%;
+  background: #01848c;
+}
+.progress-bar .percent.solution {
+  width: 40%;
+  background: #014a4e;
+}
+.progress-bar .percent.market {
+  width: 20%;
+  background: #1bb1ba;
+}
+.progress-bar .percent.surprise {
+  width: 20%;
+  background: #01848c;
+}
+.progress-bar p {
+  padding: 1em 1em 2em 1em;
+  color: #fff;
+  font-weight: 600;
+  font-family: "adelle", serif;
+  line-height: 1;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.progress-bar span {
+  display: block;
+  font-weight: 800;
+  font-size: 2em;
+  color: #85f8ff;
+  line-height: 1;
+}
+.judges ul {
+  zoom: 1;
+}
+.judges ul:before,
+.judges ul:after {
+  content: "";
+  display: table;
+}
+.judges ul:after {
+  clear: both;
+}
+.judges .judge {
+  float: left;
+  width: 25%;
+}
+.judges .judge article {
+  padding: 0 1em ;
+}
+.judges .judge img {
+  display: block;
+  width: 80%;
+  border-radius: 110px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.judges .judge h1 {
+  font-size: 1.25em;
+  margin: 0 0 0.25em 0;
+}
+.judges .judge p {
+  text-align: center;
+  font-size: 0.75em;
+}
+.venue {
+  position: relative;
+  padding: 0;
+}
+.venue .panel {
+  background: #fff;
+  padding: 4em 2em;
+  position: absolute;
+  width: 16em;
+  top: 0px;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -30em;
+}
+.venue h4 {
+  text-align: left;
+}
+.venue h1 {
+  margin: 0.25em 0 1em 0;
+  text-align: left;
+}
+.venue p {
+  margin: 0 0 0 0;
+}
+.venue a {
+  display: block;
+  margin: 0.75em 0 0.75em 0;
+}
+.schedule {
+  padding: 3em 0 4em 0;
+  background: #fcb614;
+  position: relative;
+}
+.schedule h2 {
+  margin: 0;
+  padding: 0.25em 1em 0.5em 1em;
+  color: #171b1e;
+  font-size: 2em;
+  font-weight: 800;
+}
+.schedule ol {
+  float: left;
+  width: 50%;
+}
+.schedule li {
+  border-bottom: 1px dotted #a6b2b1;
+  margin: 0 1em;
+  background: #fff;
+}
+.schedule li span {
+  display: block;
+  font-size: 0.8em;
+  color: #7c8a8b;
+}
+.schedule li p {
+  font-family: "adelle", serif;
+  color: #171b1e;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 1em;
+}
+.prizes img.animated {
+  display: block;
+  margin: 0 auto;
+}
+.prizes .prize h1 {
+  margin: 0 0 0.25em 0;
+  font-weight: 600;
+}
+.prizes p {
+  text-align: center;
+}
+.prizes ul {
+  zoom: 1;
+}
+.prizes ul:before,
+.prizes ul:after {
+  content: "";
+  display: table;
+}
+.prizes ul:after {
+  clear: both;
+}
+.prizes ul li {
+  width: 50%;
+  float: left;
 }
 .fade {
   opacity: 0;

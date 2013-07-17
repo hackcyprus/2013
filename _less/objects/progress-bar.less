@@ -1,0 +1,60 @@
+.criteria {
+  padding: 4em 0 0 0;
+
+  h2.section-subhead {
+    margin-bottom: 2em;
+  }
+}
+
+.progress-bar {
+  .clearfix;
+  width: 100%;
+  margin: 2em 0;
+
+  .percent {
+      float: left;
+      background: @mono-20;
+
+
+      &.problem {
+        width: 20%;
+        background: @secondary-80;
+      }
+
+      &.solution {
+        width: 40%;
+        background: @secondary;
+      }
+
+      &.market {
+        width: 20%;
+        background: @secondary-60;
+      }
+
+      &.surprise {
+        width: 20%;
+        background: @secondary-80;
+      }
+
+  }
+
+  p {
+    padding: 1em 1em 2em 1em;
+    color: #fff;
+    font-weight: 600;
+    .serif;
+    line-height: 1;
+    margin: 0;
+      -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  }
+
+  span {
+    display: block;
+    font-weight: 800;
+    font-size: 2em;
+    color: @secondary-20;
+    line-height: 1;
+  }
+
+}
