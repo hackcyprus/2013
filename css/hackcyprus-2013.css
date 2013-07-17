@@ -926,9 +926,13 @@ a#logo:hover h1 b {
   font-weight: 800;
 }
 .cloudz a {
-  width: 10em;
+  width: 12em;
   margin: 0 auto;
   display: block;
+  border: 0;
+}
+.cloudz a img {
+  width: 100%;
 }
 .criteria {
   padding: 4em 0 0 0;
@@ -1086,7 +1090,7 @@ a#logo:hover h1 b {
 }
 .prizes .prize h1 {
   margin: 0 0 0.25em 0;
-  font-weight: 800;
+  font-weight: 600;
 }
 .prizes p {
   text-align: center;
