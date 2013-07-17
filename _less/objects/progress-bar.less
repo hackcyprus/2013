@@ -1,0 +1,40 @@
+.progress-bar {
+  .clearfix;
+  width: 100%;
+  background: red;
+
+  .percent {
+      float: left;
+      background: @mono-20;
+
+      &.problem {
+        width: 25%;
+        background: green;
+      }
+
+      &.solution {
+        width: 45%;
+        background: blue;
+      }
+
+      &.market {
+        width: 15%;
+        background: yellow;
+      }
+
+      &.surprise {
+        width: 15%;
+        background: purple;
+      }
+
+  }
+
+  p {
+    padding: 1em;
+  }
+
+  span {
+    display: block;
+  }
+
+}
