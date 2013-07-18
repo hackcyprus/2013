@@ -16,6 +16,32 @@
 
     {% include footer.html %}
 
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            'use strict';
+
+            var $ticketFloater = $('#ticket-floater')
+              , $ticketButton = $('#ticket-btn')
+              , $window = $(window)
+              , showing = false
+              , top = null
+              , height = null;
+
+            if ($ticketButton.length == 0) return;
+
+            top = $ticketButton.offset().top;
+            height = $ticketButton.height();
+
+            $(window).scroll(function() {
+                var show = $window.scrollTop() > (top + height);
+                if (showing && show) return;
+                showing = show;
+                $ticketFloater[ show ? 'fadeIn' : 'fadeOut']();
+            });
+        }(jQuery));
+    </script>
+
   </body>
 
 </html>
