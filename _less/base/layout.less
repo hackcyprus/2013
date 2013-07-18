@@ -5,5 +5,30 @@
 }
 
 .row {
-  padding: 2em 0
+  padding: 2em 0;
+  &.insights,
+  &.hackathon {
+    border-bottom: 1px dashed @mono-20;
+  }
+}
+
+.code-school,
+.junior-hackathon {
+  padding: 4em 0;
+}
+
+.code-school {
+  background-color: #b9ecec;
+  background-image: url(/images/robot-1.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  h2 {
+    color: @secondary-80;
+  }
+}
+
+.junior-hackathon {
+  background-image: url(/images/robot-2.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
