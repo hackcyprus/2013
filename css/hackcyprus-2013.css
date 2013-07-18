@@ -772,6 +772,13 @@ a#logo:hover h1 b {
   font-size: 0.75em;
   border: 0;
 }
+#ticket-floater {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  display: none;
+  z-index: 999;
+}
 .panorama {
   padding: 7em 0;
   background-image: url(/images/header-bg.jpg);
