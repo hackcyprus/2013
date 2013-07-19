@@ -219,9 +219,24 @@ textarea {
 }
 #footer {
   background: #171b1e;
+  padding: 2em 0;
+}
+#footer h2 {
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 800;
+}
+#footer img {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2em;
 }
 #footer ul {
   zoom: 1;
+  margin-bottom: 3em;
 }
 #footer ul:before,
 #footer ul:after {
@@ -237,15 +252,11 @@ textarea {
 }
 #footer li a {
   display: block;
+  font-size: 0.875em;
   text-align: center;
   border: 0;
   color: #1bb1ba;
-  padding: 2em 1em;
-}
-#footer p {
-  text-align: center;
-  margin-top: 1em;
-  color: #556363;
+  padding: 0 1em;
 }
 @font-face {
   font-family: 'deming';
@@ -884,17 +895,27 @@ a#logo:hover h1 b {
   font-size: 0.5em;
 }
 .partners {
-  border-top: 1px solid #d1d8d8;
-  zoom: 1;
   padding: 4em 0;
 }
-.partners:before,
-.partners:after {
+.partners ul {
+  zoom: 1;
+}
+.partners ul:before,
+.partners ul:after {
   content: "";
   display: table;
 }
-.partners:after {
+.partners ul:after {
   clear: both;
+}
+.partners .supporters {
+  margin-bottom: 4em;
+}
+.partners .media-partners {
+  margin-top: 4em;
+}
+.partners .media-partners .partner-logo.small {
+  width: 33.333333%;
 }
 .partner-logo {
   float: left;
@@ -1168,8 +1189,7 @@ a#logo:hover h1 b {
 .venue p {
   margin: 0 0 0 0;
 }
-.venue a {
-  display: block;
+.venue div.detail {
   margin: 0.75em 0 0.75em 0;
 }
 .schedule {
@@ -1208,6 +1228,7 @@ a#logo:hover h1 b {
 .prizes img.animated {
   display: block;
   margin: 0 auto;
+  margin-bottom: 3em;
 }
 .prizes .prize h1 {
   margin: 0 0 0.25em 0;
@@ -1248,6 +1269,7 @@ a#logo:hover h1 b {
 .crew li article h1 {
   font-size: 1.25em;
 }
+.crew li article span,
 .crew li article a {
   display: block;
   border: none;
@@ -1255,6 +1277,9 @@ a#logo:hover h1 b {
   color: #1bb1ba;
   font-size: 0.875em;
   margin: 0.5em 0 1em 0;
+}
+.crew li article span {
+  color: #7c8a8b;
 }
 .crew li article p {
   text-align: center;

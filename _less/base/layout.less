@@ -35,25 +35,38 @@
 
 #footer {
   background: @mono;
+  padding: 2em 0;
+
+  h2 {
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+  img {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2em;
+  }
+
   ul {
     .clearfix;
+    margin-bottom: 3em;
   }
+
   li {
     float: left;
     width:20%;
     a {
       display: block;
+      font-size: 0.875em;
       text-align: center;
       border: 0;
       color: @secondary-60;
-      padding: 2em 1em;
+      padding: 0 1em;
+    }
   }
-  }
-
-  p {
-    text-align: center;
-    margin-top: 1em;
-    color: @mono-80;
-  }
-
 }
