@@ -195,6 +195,58 @@ textarea {
 .row {
   padding: 2em 0;
 }
+.row.insights,
+.row.hackathon {
+  border-bottom: 1px dashed #d1d8d8;
+}
+.code-school,
+.junior-hackathon {
+  padding: 4em 0;
+}
+.code-school {
+  background-color: #b9ecec;
+  background-image: url(/images/robot-1.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.code-school h2 {
+  color: #01848c;
+}
+.junior-hackathon {
+  background-image: url(/images/robot-2.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+#footer {
+  background: #171b1e;
+}
+#footer ul {
+  zoom: 1;
+}
+#footer ul:before,
+#footer ul:after {
+  content: "";
+  display: table;
+}
+#footer ul:after {
+  clear: both;
+}
+#footer li {
+  float: left;
+  width: 20%;
+}
+#footer li a {
+  display: block;
+  text-align: center;
+  border: 0;
+  color: #1bb1ba;
+  padding: 2em 1em;
+}
+#footer p {
+  text-align: center;
+  margin-top: 1em;
+  color: #556363;
+}
 @font-face {
   font-family: 'deming';
   src: url('/fonts/deming_ep-webfont.eot');
@@ -251,6 +303,9 @@ h1.display {
   width: 35em;
   margin: 0 auto;
 }
+.section-subhead.greek {
+  font-family: "Open Sans", sans-serif;
+}
 h2,
 h3 {
   font-weight: 300;
@@ -286,6 +341,10 @@ p {
 }
 .brand-font span {
   color: #fcb614;
+}
+.code-school h2,
+.junior-hackathon h2 {
+  margin: 0 auto 1em auto;
 }
 a {
   color: #014a4e;
@@ -694,6 +753,9 @@ a#logo:hover h1 b {
 .basic-deets .price p {
   border-right: 1px solid #d1d8d8;
 }
+.manifesto {
+  padding: 4em 0 0 0;
+}
 .big-numbers {
   background: #fcb614;
   padding-top: 4em;
@@ -822,7 +884,7 @@ a#logo:hover h1 b {
   font-size: 0.5em;
 }
 .partners {
-  background: #d1d8d8;
+  border-top: 1px solid #d1d8d8;
   zoom: 1;
   padding: 4em 0;
 }
@@ -835,12 +897,16 @@ a#logo:hover h1 b {
   clear: both;
 }
 .partner-logo {
-  width: 16.5%;
   float: left;
 }
+.partner-logo.big {
+  width: 50%;
+}
+.partner-logo.small {
+  width: 25%;
+}
 .partner-logo a {
-  margin: 1em;
-  background: #fff;
+  margin: 0.5em;
   border: 0;
   display: block;
 }
@@ -1164,6 +1230,34 @@ a#logo:hover h1 b {
 .prizes ul li {
   width: 50%;
   float: left;
+}
+.crew li {
+  float: left;
+  width: 25%;
+}
+.crew li article {
+  padding: 1em;
+}
+.crew li article img {
+  display: block;
+  width: 80%;
+  border-radius: 110px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.crew li article h1 {
+  font-size: 1.25em;
+}
+.crew li article a {
+  display: block;
+  border: none;
+  text-align: center;
+  color: #1bb1ba;
+  font-size: 0.875em;
+  margin: 0.5em 0 1em 0;
+}
+.crew li article p {
+  text-align: center;
 }
 .fade {
   opacity: 0;
