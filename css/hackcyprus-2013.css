@@ -935,8 +935,103 @@ a#logo:hover h1 b {
   display: block;
   width: 100%;
 }
-.speakers {
+.talks {
   padding: 4em 0 0 0;
+  zoom: 1;
+}
+.talks:before,
+.talks:after {
+  content: "";
+  display: table;
+}
+.talks:after {
+  clear: both;
+}
+.talks ul {
+  padding: 6em 0 0 0;
+  border-left: 1px solid #d1d8d8;
+  margin-left: -1px;
+}
+.talks .segment {
+  zoom: 1;
+  height: 8em;
+  display: block;
+  border-top: 1px solid #d1d8d8;
+  margin-bottom: 3em;
+}
+.talks .segment:before,
+.talks .segment:after {
+  content: "";
+  display: table;
+}
+.talks .segment:after {
+  clear: both;
+}
+.talks .segment.non-speaker {
+  margin-bottom: 1em;
+}
+.talks .inner {
+  margin-top: -1em;
+}
+.talks .meta,
+.talks img,
+.talks .no-img,
+.talks .descr {
+  float: left;
+}
+.talks .meta {
+  width: 4em;
+  background: #fff;
+  padding: 0 1em;
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+.talks img {
+  width: 8em;
+  margin-left: 5em;
+  display: block;
+  border-radius: 20em;
+  margin-top: -4em;
+  border: 1em solid #fff;
+}
+.talks .no-img {
+  text-indent: -9999em;
+  width: 8em;
+  height: 8em;
+  margin-left: 5em;
+  display: block;
+  border-radius: 20em;
+  margin-top: -4em;
+  border: 1em solid transparent;
+}
+.talks .descr {
+  width: 32em;
+  margin-left: 3em;
+  background: #fff;
+  padding: 1em;
+  margin-top: -2.4em;
+}
+.talks .descr h1 {
+  text-align: left;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.talks .descr h2 {
+  text-align: left;
+  font-size: 1.25em;
+  margin-top: 0.5em;
+}
+.talks .descr .title {
+  margin: 0.5em 0 1em 0;
+  font-size: 1em;
+}
+.talks .descr p {
+  font-size: 0.875em;
+}
+.talks .non-speaker .descr {
+  margin-top: -1.6em;
+}
+.speakers {
   zoom: 1;
 }
 .speakers:before,
@@ -947,89 +1042,80 @@ a#logo:hover h1 b {
 .speakers:after {
   clear: both;
 }
-.speakers ul {
-  padding: 6em 0 0 0;
-  border-left: 1px solid #d1d8d8;
-  margin-left: -1px;
-}
-.speakers .segment {
-  zoom: 1;
-  height: 8em;
+.speakers hr {
   display: block;
-  border-top: 1px solid #d1d8d8;
-  margin-bottom: 3em;
+  height: 2px;
+  width: 10em;
+  position: relative;
+  margin: 0em auto;
+  background: #d1d8d8;
+  border: none;
 }
-.speakers .segment:before,
-.speakers .segment:after {
+.speakers .row {
+  zoom: 1;
+}
+.speakers .row:before,
+.speakers .row:after {
   content: "";
   display: table;
 }
-.speakers .segment:after {
+.speakers .row:after {
   clear: both;
 }
-.speakers .segment.non-speaker {
-  margin-bottom: 1em;
-}
-.speakers .inner {
-  margin-top: -1em;
-}
-.speakers .meta,
-.speakers img,
-.speakers .no-img,
-.speakers .descr {
+.speakers .photos {
+  zoom: 1;
+  width: 40em;
   float: left;
 }
-.speakers .meta {
-  width: 4em;
-  background: #fff;
-  padding: 0 1em;
-  margin-left: 2em;
-  margin-top: 0.5em;
+.speakers .photos:before,
+.speakers .photos:after {
+  content: "";
+  display: table;
 }
-.speakers img {
-  width: 8em;
-  margin-left: 5em;
+.speakers .photos:after {
+  clear: both;
+}
+.speakers .photos div.photo {
+  width: 33.3333%;
+  float: left;
+}
+.speakers .photos div.photo:hover {
+  cursor: pointer;
+}
+.speakers .photos div.photo.selected img {
+  border: 1em solid #d1d8d8;
+}
+.speakers .photos div.photo img {
+  transition: border 0.6s;
+  -webkit-transition: border 0.6s;
+  margin: 0 auto;
+  width: 9em;
   display: block;
   border-radius: 20em;
-  margin-top: -4em;
+  margin: 0 0 1em 0;
   border: 1em solid #fff;
 }
-.speakers .no-img {
-  text-indent: -9999em;
-  width: 8em;
-  height: 8em;
-  margin-left: 5em;
-  display: block;
-  border-radius: 20em;
-  margin-top: -4em;
-  border: 1em solid transparent;
+.speakers .bios {
+  float: left;
+  width: 20em;
 }
-.speakers .descr {
-  width: 32em;
-  margin-left: 3em;
-  background: #fff;
-  padding: 1em;
-  margin-top: -2.4em;
-}
-.speakers .descr h1 {
-  text-align: left;
-  font-size: 1.25em;
-  font-weight: 700;
-}
-.speakers .descr h2 {
-  text-align: left;
-  font-size: 1.25em;
-  margin-top: 0.5em;
-}
-.speakers .descr .title {
-  margin: 0.5em 0 1em 0;
-  font-size: 1em;
-}
-.speakers .descr p {
+.speakers .bios .bio {
+  display: none;
+  color: #7c8a8b;
   font-size: 0.875em;
 }
-.speakers .non-speaker .descr {
-  margin-top: -1.6em;
+.speakers .bios .bio p {
+  letter-spacing: 1;
+  margin: 0.75em 0;
+}
+.speakers .bios .bio h1 {
+  text-align: left;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #171b1e;
+}
+.speakers .bios .bio.selected {
+  display: block;
 }
 .intro {
   padding: 3em 0;

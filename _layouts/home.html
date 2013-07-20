@@ -41,6 +41,28 @@
             });
         }(jQuery));
     </script>
+    <script type="text/javascript">
+        (function($) {
+            'use strict';
+            var $speakers = $('#js-speakers')
+              , $photos
+              , $bios;
+
+            if ($speakers.length == 0) return;
+
+            $photos = $speakers.find('.photo');
+            $bios = $speakers.find('.bio');
+
+            $photos.on('click', function(e) {
+                var $this = $(this)
+                  , id = $this.attr('data-bio-id');
+                $photos.removeClass('selected');
+                $bios.removeClass('selected');
+                $this.addClass('selected');
+                $speakers.find('#' + id).addClass('selected');
+            });
+        }(jQuery));
+    </script>
 
   </body>
 
