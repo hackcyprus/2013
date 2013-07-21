@@ -258,6 +258,10 @@ textarea {
   color: #1bb1ba;
   padding: 0 1em;
 }
+a span.conf {
+  display: block;
+  font-size: 1em;
+}
 @font-face {
   font-family: 'deming';
   src: url('/fonts/deming_ep-webfont.eot');
@@ -845,6 +849,19 @@ a#logo:hover h1 b {
 .ticket-blurb {
   float: left;
   width: 33.333%;
+  position: relative;
+}
+.ticket-blurb.insights {
+  background: #edefef;
+}
+.ticket-blurb.insights h4 {
+  position: absolute;
+  color: #7c8a8b;
+  top: 2em;
+  width: 14em;
+  left: 50%;
+  margin-left: -7em;
+  font-weight: 600;
 }
 .event {
   padding: 4em 2em;
