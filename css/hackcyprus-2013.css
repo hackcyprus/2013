@@ -888,6 +888,10 @@ p.paypal-sucks {
   margin: 0;
   color: #171b1e;
   font-size: 0.875em;
+  margin-bottom: 2em;
+}
+.row.insights h4 {
+  margin-bottom: 1em;
 }
 .panorama {
   padding: 7em 0;
