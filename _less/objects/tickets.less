@@ -8,7 +8,18 @@
   ul {
     border-right: 1px dotted @mono-20;
     .clearfix;
+
+    li h1 a {
+      color: @mono;
+      font-weight: 800;
+      text-decoration: none;
+      border: none;
+      &:hover {
+        border-bottom: 1px dotted @secondary;
+      }
+    }
   }
+
 }
 
 .ticket-blurb {
@@ -59,4 +70,10 @@
   left: 25px;
   display: none;
   z-index: 999;
+}
+
+p.paypal-sucks {
+  margin:0;
+  color: @mono;
+  font-size: 0.875em;
 }
