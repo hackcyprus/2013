@@ -865,13 +865,17 @@ a#logo:hover h1 b {
 }
 .ticket-blurb.insights h4.headline {
   position: absolute;
-  color: #7c8a8b;
-  top: 2em;
+  color: #fff;
+  background-color: #1bb1ba;
+  top: 1em;
   width: 14em;
-  left: 50%;
-  margin-left: -7em;
   font-weight: 600;
   margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  left: 0em;
+  padding: 0.65em 0;
+  text-shadow: 1px 1px 0px #01848c;
 }
 .ticket-blurb.insights .more {
   opacity: 1;
