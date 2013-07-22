@@ -1143,7 +1143,7 @@ p.paypal-sucks {
   cursor: pointer;
 }
 .speakers .photos div.photo.selected img {
-  border: 1em solid #d1d8d8;
+  border: 1em solid #44dae3;
 }
 .speakers .photos div.photo img {
   transition: border 0.6s;
