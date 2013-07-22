@@ -658,6 +658,9 @@ input.fail {
 #site-nav ul.right-nav {
   float: right;
 }
+#site-nav ul.right-nav li a {
+  line-height: 2;
+}
 #site-nav li {
   float: left;
   width: 33%;
@@ -673,6 +676,12 @@ input.fail {
   text-align: center;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
+}
+#site-nav li a span {
+  display: block;
+  color: #556363;
+  margin-bottom: 0.15em;
+  text-transform: capitalize;
 }
 #site-nav li a.tickets {
   color: #44dae3;
@@ -701,7 +710,7 @@ a#logo h1 {
   font-weight: 500;
   text-align: center;
   font-family: "adelle", serif;
-  line-height: 1;
+  line-height: 1.5;
 }
 a#logo h1 b {
   color: #fcb614;
@@ -854,7 +863,7 @@ a#logo:hover h1 b {
 .ticket-blurb.insights {
   background: #edefef;
 }
-.ticket-blurb.insights h4 {
+.ticket-blurb.insights h4.headline {
   position: absolute;
   color: #7c8a8b;
   top: 2em;
@@ -862,6 +871,7 @@ a#logo:hover h1 b {
   left: 50%;
   margin-left: -7em;
   font-weight: 600;
+  margin-bottom: 0;
 }
 .event {
   padding: 4em 2em;
@@ -893,6 +903,9 @@ a#logo:hover h1 b {
   text-align: center;
   font-size: 0.75em;
   border: 0;
+}
+.event h4 {
+  margin-bottom: 1em;
 }
 #ticket-floater {
   position: fixed;
