@@ -892,17 +892,10 @@ a#logo:hover h1 b {
   margin-bottom: 1.5em;
   text-align: center;
 }
-.event .tickets {
+.event .more {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: normal;
-  margin-bottom: 1em;
-}
-.event .more {
-  display: block;
-  text-align: center;
-  font-size: 0.75em;
-  border: 0;
 }
 .event h4 {
   margin-bottom: 1em;
