@@ -989,6 +989,13 @@ p.paypal-sucks {
 .partner-logo.small {
   width: 25%;
 }
+.partner-logo.small h4 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.partner-logo.small h3 {
+  font-weight: 600;
+}
 .partner-logo a {
   margin: 0.5em;
   border: 0;
