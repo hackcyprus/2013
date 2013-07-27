@@ -1278,44 +1278,55 @@ p.paypal-sucks {
   color: #85f8ff;
   line-height: 1;
 }
-.judges h2 {
+.people h2 {
   margin: 0 auto 2em auto;
 }
-.judges ul {
+.people ul {
   zoom: 1;
 }
-.judges ul:before,
-.judges ul:after {
+.people ul:before,
+.people ul:after {
   content: "";
   display: table;
 }
-.judges ul:after {
+.people ul:after {
   clear: both;
 }
-.judges .judge {
-  float: left;
+.people .judge {
   width: 20%;
 }
-.judges .judge article {
+.people .workshop {
+  width: 25%;
+}
+.people .judge,
+.people .workshop {
+  float: left;
+}
+.people .judge article,
+.people .workshop article {
   padding: 0 1em ;
 }
-.judges .judge img {
+.people .judge img,
+.people .workshop img {
   display: block;
   width: 80%;
   border-radius: 110px;
   margin: 0 auto;
   margin-bottom: 1em;
 }
-.judges .judge h1 {
+.people .judge h1,
+.people .workshop h1 {
   font-size: 1em;
   margin: 0 0 0.25em 0;
 }
-.judges .judge p {
+.people .judge p,
+.people .workshop p {
   text-align: center;
   font-size: 0.75em;
   margin: 0 0 0.5em 0;
 }
-.judges .judge span {
+.people .judge span,
+.people .workshop span {
   display: block;
   background: #44dae3;
   padding: 1em;
@@ -1327,7 +1338,8 @@ p.paypal-sucks {
   text-align: center;
   width: 12em;
 }
-.judges .judge span b {
+.people .judge span b,
+.people .workshop span b {
   font-weight: 600;
   color: #014a4e;
 }
