@@ -1430,9 +1430,25 @@ p.paypal-sucks {
   width: 50%;
   float: left;
 }
+.crew {
+  zoom: 1;
+}
+.crew:before,
+.crew:after {
+  content: "";
+  display: table;
+}
+.crew:after {
+  clear: both;
+}
 .crew li {
   float: left;
   width: 25%;
+}
+.crew li.middle {
+  position: relative;
+  margin: 0 auto;
+  float: none;
 }
 .crew li article {
   padding: 1em;
@@ -1461,6 +1477,12 @@ p.paypal-sucks {
 }
 .crew li article p {
   text-align: center;
+}
+.crew.volunteers li {
+  width: 16.6666%;
+}
+.crew.volunteers h1 {
+  font-size: 1em;
 }
 .fade {
   opacity: 0;
