@@ -1,15 +1,21 @@
 .crew {
+  .clearfix;
   li{
     float: left;
     width: 25%;
+    &.middle {
+      position: relative;
+      margin: 0 auto;
+      float: none;
+    }
     article {
       padding: 1em;
       img {
         display: block;
-      width: 80%;
-      border-radius: 110px;
-      margin: 0 auto;
-      margin-bottom: 1em;
+        width: 80%;
+        border-radius: 110px;
+        margin: 0 auto;
+        margin-bottom: 1em;
       }
 
       h1 {
@@ -33,5 +39,14 @@
         text-align: center;
       }
     }
+  }
+}
+
+.crew.volunteers {
+  li {
+    width: 16.6666%;
+  }
+  h1 {
+    font-size: 1em;
   }
 }
