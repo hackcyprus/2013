@@ -1494,6 +1494,21 @@ p.paypal-sucks {
 .crew.volunteers h1 {
   font-size: 1em;
 }
+.faq dl {
+  width: 43em;
+  margin: 0 auto;
+  position: relative;
+}
+.faq dt {
+  font-family: "Open Sans", sans-serif;
+  margin: 2em 0 0.5em 0;
+}
+.faq dd {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 0.875em;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
