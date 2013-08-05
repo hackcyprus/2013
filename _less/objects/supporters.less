@@ -1,87 +1,60 @@
-#supporters {
-  background: #fff;
-  // padding: 5em 0;
-  position: relative;
+.supporters {
+  padding-top: 4em;
 
-  p {
-    font-size: 1em;
-  }
-
-  #tera, #giga, #mega, #kilo {
+  ul {
     .clearfix;
-    margin-bottom: 2em;
   }
 
-  h1 {
-    font-weight: 300;
-    font-family: "deming";
-    font-size: 1.875em;
-    margin-bottom: 2em;
-    letter-spacing: 1px;
-    color: @mono-60;
+  &.supporters-rest {
+    padding-top: 0;
+
+    ul.generic {
+      margin-bottom: 4em;
+    }
+
+    ul.media {
+      margin-top: 4em;
+      .supporter-logo.small {
+        width: 25%;
+      }
+    }
   }
 
-  h2 {
-    font-size: 0.75em;
-    text-transform: uppercase;
-    .sans;
-    color: @mono-40;
-    letter-spacing: 1px;
-    margin-bottom: 1.5em;
-  }
-
-  .supporter {
-    background: #fff;
+  .supporter-logo {
     float: left;
-    outline: 2px dotted @mono-20;
-    a {
-      border: 2px solid #fff;
-      display: block;
-      width: 100%;
-      height: 100%;
-      img {
 
+    &.big {
+      width: 50%;
+    }
+
+    &.small {
+      width: 20%;
+      h4 {
+        margin-top: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      h3{
+
+        font-weight: 600;
+      }
+      &.fake {
+        display: block;
+      }
+
+      &.no-img {
+        display: block;
+        height: 89px;
+      }
+    }
+
+    a {
+      margin: 0.5em;
+      border: 0;
+      display: block;
+      img {
         display: block;
         width: 100%;
       }
     }
   }
-
-  #tera {
-    .supporter {
-      width: 50%;
-    }
-    a {
-      height: 8em;
-    }
-  }
-
-  #giga {
-    .supporter {
-      width: 33%;
-    }
-    a {
-      height: 6em;
-    }
-  }
-
-
-  #mega {
-    .supporter {
-      width: 20%;
-    }
-    a {
-      height: 4em;
-    }
-  }
-
-   #kilo {
-    .supporter {
-      width: 16.5%;
-    }
-    a {
-      height: 3.5em;
-    }
-  }
-
 }

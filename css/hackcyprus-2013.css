@@ -957,58 +957,61 @@ p.paypal-sucks {
   margin-top: 0.5em;
   font-size: 0.75em;
 }
-.partners {
-  padding: 4em 0;
+.supporters {
+  padding-top: 4em;
 }
-.partners ul {
+.supporters ul {
   zoom: 1;
 }
-.partners ul:before,
-.partners ul:after {
+.supporters ul:before,
+.supporters ul:after {
   content: "";
   display: table;
 }
-.partners ul:after {
+.supporters ul:after {
   clear: both;
 }
-.partners .supporters {
+.supporters.supporters-rest {
+  padding-top: 0;
+}
+.supporters.supporters-rest ul.generic {
   margin-bottom: 4em;
 }
-.partners .media-partners {
+.supporters.supporters-rest ul.media {
   margin-top: 4em;
 }
-.partners .media-partners .partner-logo.small {
+.supporters.supporters-rest ul.media .supporter-logo.small {
   width: 25%;
 }
-.partner-logo {
+.supporters .supporter-logo {
   float: left;
 }
-.partner-logo.big {
+.supporters .supporter-logo.big {
   width: 50%;
 }
-.partner-logo.small {
+.supporters .supporter-logo.small {
   width: 20%;
 }
-.partner-logo.small h4 {
+.supporters .supporter-logo.small h4 {
   margin-top: 1.2em;
   margin-bottom: 0.5em;
 }
-.partner-logo.small h3 {
+.supporters .supporter-logo.small h3 {
   font-weight: 600;
 }
-.partner-logo.small.fake {
+.supporters .supporter-logo.small.fake {
   display: block;
 }
-.partner-logo.small.no-img {
+.supporters .supporter-logo.small.no-img {
   display: block;
   height: 89px;
 }
-.partner-logo a {
+.supporters .supporter-logo a {
   margin: 0.5em;
   border: 0;
   display: block;
 }
-.partner-logo a img {
+.supporters .supporter-logo a img {
   display: block;
   width: 100%;
 }
