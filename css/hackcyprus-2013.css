@@ -971,6 +971,10 @@ p.paypal-sucks {
 .supporters ul:after {
   clear: both;
 }
+.supporters ul.tera {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
 .supporters.supporters-rest {
   padding-top: 0;
 }
@@ -1014,6 +1018,10 @@ p.paypal-sucks {
 .supporters .supporter-logo a img {
   display: block;
   width: 100%;
+}
+.supporters ul.tera .supporter-logo.big {
+  width: 50%;
+  margin: 0 25% 0 25%;
 }
 .talks {
   padding: 4em 0 0 0;
