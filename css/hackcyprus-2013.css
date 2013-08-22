@@ -960,6 +960,12 @@ p.paypal-sucks {
 .supporters {
   padding-top: 4em;
 }
+.supporters.auspice {
+  padding-bottom: 0;
+}
+.supporters.auspice ul.tera {
+  margin-bottom: 0;
+}
 .supporters ul {
   zoom: 1;
 }
