@@ -960,10 +960,11 @@ p.paypal-sucks {
 .supporters {
   padding-top: 4em;
 }
-.supporters.auspice {
-  padding-bottom: 0;
+.supporters.extra {
+  padding-bottom: 2em;
+  padding-top: 0;
 }
-.supporters.auspice ul.tera {
+.supporters.extra ul.tera {
   margin-bottom: 0;
 }
 .supporters ul {
@@ -999,6 +1000,9 @@ p.paypal-sucks {
 .supporters .supporter-logo.big {
   width: 50%;
 }
+.supporters .supporter-logo.medium {
+  width: 35%;
+}
 .supporters .supporter-logo.small {
   width: 20%;
 }
@@ -1028,6 +1032,10 @@ p.paypal-sucks {
 .supporters ul.tera .supporter-logo.big {
   width: 50%;
   margin: 0 25% 0 25%;
+}
+.supporters ul.tera .supporter-logo.medium {
+  width: 40%;
+  margin: 0 30% 0 30%;
 }
 .talks {
   padding: 4em 0 0 0;
