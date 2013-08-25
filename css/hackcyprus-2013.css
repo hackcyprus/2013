@@ -1536,6 +1536,25 @@ p.paypal-sucks {
   line-height: 1.4;
   font-size: 0.875em;
 }
+.startup-street {
+  margin-bottom: 2em;
+}
+.startup-street ul {
+  margin-top: 2em;
+}
+.startup-street li.startup {
+  float: left;
+  width: 25%;
+}
+.startup-street li.startup a {
+  margin: 1em 0.5em;
+  border: 0;
+  display: block;
+}
+.startup-street li.startup a img {
+  display: block;
+  width: 100%;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
