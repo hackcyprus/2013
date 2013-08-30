@@ -1072,6 +1072,10 @@ p.paypal-sucks {
 .talks .segment.non-speaker {
   margin-bottom: 1em;
 }
+.talks .segment.non-speaker .title b {
+  font-weight: 500;
+  color: #777;
+}
 .talks .inner {
   margin-top: -1em;
 }
