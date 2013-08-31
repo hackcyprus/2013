@@ -1549,6 +1549,7 @@ p.paypal-sucks {
 .startup-street li.startup {
   float: left;
   width: 25%;
+  margin-right: 12%;
 }
 .startup-street li.startup a {
   margin: 1em 0.5em;
