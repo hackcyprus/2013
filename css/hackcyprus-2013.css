@@ -1329,7 +1329,8 @@ p.paypal-sucks {
   clear: both;
 }
 .people .judge {
-  width: 16.666666%;
+  width: 20%;
+  margin: 0 2.5% 1em 2.5%;
 }
 .people .workshop {
   width: 25%;
@@ -1448,6 +1449,11 @@ p.paypal-sucks {
 .prizes .prize h1 {
   margin: 0 0 0.25em 0;
   font-weight: 600;
+}
+.prizes .prize.grand.ciim {
+  margin-top: 1em;
+  padding-top: 3em;
+  border-top: 1px solid #eee;
 }
 .prizes p {
   text-align: center;
